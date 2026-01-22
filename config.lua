@@ -98,7 +98,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Enchant List"] = {
             "Cursed I",
         },
-        ["Second Enchant"] = true,
+        ["Second Enchant"] = false,
         ["Allowed Sacrifice"] = {
             "King Crab",
             "Queen Crab",
