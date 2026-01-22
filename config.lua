@@ -1,7 +1,7 @@
 _G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
-        ["Auto Perfect"] = true,
-        ["Random Result"] = false,
+        ["Auto Perfect"] = false,
+        ["Random Result"] = true,
 
         ["Auto Favorite"] = true,
         ["Auto Unfavorite"] = false,
