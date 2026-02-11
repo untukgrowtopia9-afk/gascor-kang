@@ -20,7 +20,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Whitelist Username"] = {"cengoaja01"},
         ["Category Fish"] = {
             "Secret",
-            -- {Tier = "Mythic", Variant = "Gemstone"}, -- Tier + Variant
+            -- {Tier = "Mythic", Variant = "Stone"}, -- Tier + Variant
         },
         ["Fish Name"] = {
             "Sacred Guardian Squid",
@@ -38,11 +38,12 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Selling"] = {
         ["Auto Sell"] = true,
         ["Auto Sell Threshold"] = "Mythic",
-        ["Auto Sell Every"] = 500,
+        ["Auto Sell Every"] = 100,
     },
     ["Doing Quest"] = {
         ["Auto Ghostfinn Rod"] = true,
         ["Auto Element Rod"] = false,
+        ["Auto Diamond Rod"] = false,
         ["Unlock Ancient Ruin"] = false,
         ["Allowed Sacrifice"] = {
             "Ghost Shark",
@@ -144,12 +145,12 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Endgame"] = "Ghostfinn Rod",
     },
 
-    ["ExtremeFpsBoost"] = false,
+    ["ExtremeFpsBoost"] = true,
     ["UltimatePerformance"] = false,
-    ["Disable3DRender"] = true,
+    ["Disable3DRender"] = false,
     ["AutoRemovePlayer"] = false,
 
     ["AutoReconnect"] = false,
     ["HideGUI"] = false,
-    ["EXIT_MAP_IF_DISCONNECT"] = true,
+    ["EXIT_MAP_IF_DISCONNECT"] = false,
 }
