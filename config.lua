@@ -140,13 +140,14 @@ _G.FishItConfig = _G.FishItConfig or {
             ["Tropical Grove"] = {"Astral Rod"},
             ["Treasure Room"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
         },
+        
         ["Endgame"] = "Ghostfinn Rod",
     },
 
-    ["ExtremeFpsBoost"] = true,
+    ["ExtremeFpsBoost"] = false,
     ["UltimatePerformance"] = false,
     ["Disable3DRender"] = true,
-    ["AutoRemovePlayer"] = true,
+    ["AutoRemovePlayer"] = false,
 
     ["AutoReconnect"] = false,
     ["HideGUI"] = false,
