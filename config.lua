@@ -145,7 +145,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Endgame"] = "Ghostfinn Rod",
     },
 
-    ["ExtremeFpsBoost"] = true,
+    ["ExtremeFpsBoost"] = false,
     ["UltimatePerformance"] = true,
     ["Disable3DRender"] = true,
     ["AutoRemovePlayer"] = false,
