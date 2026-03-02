@@ -8,6 +8,9 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Fish Name"] = {
             "Sacred Guardian Squid",
             {Name = "Ruby", Variant = "Gemstone"},
+            {Name = "Blob Fish", Variant = "Gemstone"},
+            {Tier = "Mythic", Variant = "Gemstone"},
+            {Tier = "Mythic", Variant = "Fairy Dust"},
             -- {Variant = "Leviathan Rage"}, -- Variant Only
             -- {Tier = "Secret", Variant = "Leviathan Rage"},  -- Tier + Variant
         },
@@ -25,6 +28,9 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Fish Name"] = {
             "Sacred Guardian Squid",
             {Name = "Ruby", Variant = "Gemstone"},
+            {Name = "Blob Fish", Variant = "Gemstone"},
+            {Tier = "Mythic", Variant = "Gemstone"},
+            {Tier = "Mythic", Variant = "Fairy Dust"},
             -- {Variant = "Leviathan Rage"}, -- Variant Only
         },
         ["Item Name"] = {
