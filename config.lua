@@ -61,7 +61,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Blob Shark",
             "Ghost Shark",
         },
-        ["FARM_LOC_SECRET_SACRIFICE"] = "Treasure Room",
+        ["FARM_LOC_SECRET_SACRIFICE"] = "Tropical Grove",
 
         ["Minimum Rod"] = "Astral Rod",
     },
