@@ -103,7 +103,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Roll Enchant"] = true,
         ["Evolved Roll Enchant"] = false,
         ["Enchant List"] = {
-            "Cursed I",
+            "Reeler I",
         },
         ["Second Enchant"] = false,
         ["Allowed Sacrifice"] = {
