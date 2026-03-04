@@ -44,11 +44,12 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Selling"] = {
         ["Auto Sell"] = true,
         ["Auto Sell Threshold"] = "Mythic",
-        ["Auto Sell Every"] = 100,
+        ["Auto Sell Every"] = 50,
     },
     ["Doing Quest"] = {
         ["Auto Ghostfinn Rod"] = true,
         ["Auto Element Rod"] = false,
+        ["Auto Element Rod 2"] = true,
         ["Auto Diamond Rod"] = false,
         ["Unlock Ancient Ruin"] = false,
         ["Allowed Sacrifice"] = {
@@ -61,10 +62,11 @@ _G.FishItConfig = _G.FishItConfig or {
             "Blob Shark",
             "Ghost Shark",
         },
-        ["FARM_LOC_SECRET_SACRIFICE"] = "Tropical Grove",
+        ["FARM_LOC_SECRET_SACRIFICE"] = "Treasure Room",
 
         ["Minimum Rod"] = "Astral Rod",
     },
+    ["WebHook"] = {
     ["WebHook"] = {
         ["Link Webhook"] = "https://discord.com/api/webhooks/1157111326410276934/Nurt7kSW_tYfnz7-ups403JeHQX3u-32qvD-Sw_HNcdqh14lSfZsgbsrunIySbnpJFKm",
         ["Auto Sending"] = true,
@@ -87,14 +89,18 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Use"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Buy List"] = {
-            ["Mutation Totem"] = 5,
-            "Luck Totem",
+            ["Luck Totem"] = 5,
+            "Mutation Totem",
+            "Shiny Totem",
         },
     },
     ["Event"] = {
         ["Start Farm"] = false,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Event List"] = {
+            "Megalodon Hunt",
+            "Ghost Shark Hunt",
+            "Shark Hunt",
             -- ["Ancient Lochness Monster"] = false,
         },
     },
@@ -107,12 +113,12 @@ _G.FishItConfig = _G.FishItConfig or {
         },
         ["Second Enchant"] = false,
         ["Allowed Sacrifice"] = {
-            "King Crab",
-            "Queen Crab",
-            "Blob Shark",
+            "Frostborn Shark",
             "Cryoshade Glider",
         },
         ["Second Enchant List"] = {
+            "Reeler I",
+            "Prismatic I",
             "Mutation Hunter II",
         },
         ["Minimum Rod"] = "Ghostfinn Rod",
@@ -121,7 +127,6 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Buying"] = true,
         ["Buy List"] = {
             "Topwater Bait",
-            "Luck Bait",
             "Midnight Bait",
             "Chroma Bait",
             "Corrupt Bait",
@@ -134,7 +139,6 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Buying"] = true,
         ["Buy List"] = {
             "Luck Rod",
-            "Carbon Rod",
             "Grass Rod",
             "Midnight Rod",
             "Astral Rod",
@@ -145,16 +149,15 @@ _G.FishItConfig = _G.FishItConfig or {
             ["Fisherman Island"] = {"Starter Rod"},
             ["Kohana Volcano"] = {"Grass Rod", "Midnight Rod"},
             ["Tropical Grove"] = {"Astral Rod"},
-            ["Tropical Grove"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
+            ["Ancient Ruin"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
         },
-        
-        ["Endgame"] = "Ghostfinn Rod",
+        ["Endgame"] = "Element Rod",
     },
 
     ["ExtremeFpsBoost"] = false,
     ["UltimatePerformance"] = true,
     ["Disable3DRender"] = true,
-    ["AutoRemovePlayer"] = false,
+    ["AutoRemovePlayer"] = true,
 
     ["AutoReconnect"] = false,
     ["HideGUI"] = false,
