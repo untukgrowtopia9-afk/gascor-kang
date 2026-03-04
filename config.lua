@@ -1,16 +1,13 @@
 _G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
         ["Auto Perfect"] = false,
-        ["Random Result"] = true,
+        ["Random Result"] = false,
 
         ["Auto Favorite"] = true,
         ["Auto Unfavorite"] = false,
         ["Fish Name"] = {
             "Sacred Guardian Squid",
             {Name = "Ruby", Variant = "Gemstone"},
-            {Name = "Blob Fish", Variant = "Gemstone"},
-            {Tier = "Mythic", Variant = "Gemstone"},
-            {Tier = "Mythic", Variant = "Fairy Dust"},
             -- {Variant = "Leviathan Rage"}, -- Variant Only
             -- {Tier = "Secret", Variant = "Leviathan Rage"},  -- Tier + Variant
         },
@@ -28,9 +25,6 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Fish Name"] = {
             "Sacred Guardian Squid",
             {Name = "Ruby", Variant = "Gemstone"},
-            {Name = "Blob Fish", Variant = "Gemstone"},
-            {Tier = "Mythic", Variant = "Gemstone"},
-            {Tier = "Mythic", Variant = "Fairy Dust"},
             -- {Variant = "Leviathan Rage"}, -- Variant Only
         },
         ["Item Name"] = {
@@ -62,14 +56,13 @@ _G.FishItConfig = _G.FishItConfig or {
             "Blob Shark",
             "Ghost Shark",
         },
-        ["FARM_LOC_SECRET_SACRIFICE"] = "Treasure Room",
+        ["FARM_LOC_SECRET_SACRIFICE"] = "Ocean",
 
         ["Minimum Rod"] = "Astral Rod",
     },
     ["WebHook"] = {
-    ["WebHook"] = {
         ["Link Webhook"] = "https://discord.com/api/webhooks/1157111326410276934/Nurt7kSW_tYfnz7-ups403JeHQX3u-32qvD-Sw_HNcdqh14lSfZsgbsrunIySbnpJFKm",
-        ["Auto Sending"] = true,
+        ["Auto Sending"] = false,
         ["Category"] = {"Secret"},
 
         ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1157111326410276934/Nurt7kSW_tYfnz7-ups403JeHQX3u-32qvD-Sw_HNcdqh14lSfZsgbsrunIySbnpJFKm",
