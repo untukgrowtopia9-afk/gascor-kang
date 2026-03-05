@@ -54,6 +54,13 @@ _G.FishItConfig = _G.FishItConfig or {
             "Giant Squid",
             "Blob Shark",
             "Ghost Shark",
+            "Elshark Gran Maja",
+            "Great Whale",
+            "Robot Kraken",
+            "King Jelly",
+            "Depthseeker Ray",
+            "Gladiator Shark",
+            "Mosasaur Shark",
         },
         ["FARM_LOC_SECRET_SACRIFICE"] = "Ocean",
 
