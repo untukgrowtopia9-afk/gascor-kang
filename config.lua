@@ -70,7 +70,12 @@ _G.FishItConfig = _G.FishItConfig or {
     ["WebHook"] = {
         ["Link Webhook"] = "https://discord.com/api/webhooks/1157111326410276934/Nurt7kSW_tYfnz7-ups403JeHQX3u-32qvD-Sw_HNcdqh14lSfZsgbsrunIySbnpJFKm",
         ["Auto Sending"] = true,
-        ["Category"] = {"Secret"},{"Evolved Enchant Stone"},
+        ["Category"] = {"Secret"},
+        ["Fish Name"] = {
+            "Sacred Guardian Squid",
+            {Name = "Ruby", Variant = "Gemstone"},
+            -- {Variant = "Leviathan Rage"}, -- Variant Only
+        },
 
         ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1157111326410276934/Nurt7kSW_tYfnz7-ups403JeHQX3u-32qvD-Sw_HNcdqh14lSfZsgbsrunIySbnpJFKm",
     },
