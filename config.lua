@@ -90,7 +90,6 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Buy List"] = {
             ["Mutation Totem"] = 5,
-            "Luck Totem",
         },
     },
     ["Event"] = {
