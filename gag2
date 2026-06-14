@@ -1,0 +1,96 @@
+getgenv().GAG2Config = {
+    AUTO_UPDATE_RESTART = true,
+
+    BUY_PET = {  -- ["Pet Name"] = Amount
+        ["Monkey"] = 99, 
+        ["Bee"] = 99, 
+        ["Black Dragon"] = 99, 
+        ["Golden Dragonfly"] = 99, 
+        ["Unicorn"] = 99, 
+        ["Raccoon"] = 99, 
+        ["Ice Serpent"] = 99,
+
+        ["Robin"] = 5,
+        ["Deer"] = 5,
+    },
+
+    EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
+    },
+
+    PLANT_SEED = {  -- ["Seed Name"] = Amount
+        ["Carrot"] = 10, 
+        ["Strawberry"] = 4,
+        ["Blueberry"] = 4,
+        ["Tulip"] = 4,
+        ["Tomato"] = 4,
+        ["Apple"] = 4,
+        ["Bamboo"] = 50,
+        ["Corn"] = 4,
+        ["Cactus"] = 4,
+        ["Pineapple"] = 4,
+        ["Mushroom"] = 50,
+        ["Green Bean"] = 50,
+        ["Banana"] = 50,
+        ["Grape"] = 50,
+        ["Coconut"] = 50,
+        ["Mango"] = 50,
+        ["Dragon Fruit"] = 50,
+        ["Acorn"] = 50,
+        ["Cherry"] = 50,
+        ["Sunflower"] = 50,
+        ["Venus Fly Trap"] = 50,
+        ["Pomegranate"] = 50,
+        ["Poison Apple"] = 50,
+        ["Moon Bloom"] = 50,
+        ["Dragon's Breath"] = 50,
+    },
+
+    BUY_SEED = {  -- ["Seed Name"] = Amount
+        ["Carrot"] = 10, 
+        ["Strawberry"] = 4,
+        ["Blueberry"] = 4,
+        ["Tulip"] = 4,
+        ["Tomato"] = 4,
+        ["Apple"] = 4,
+        ["Bamboo"] = 500,
+        ["Corn"] = 4,
+        ["Cactus"] = 4,
+        ["Pineapple"] = 4,
+        ["Mushroom"] = 500,
+        ["Green Bean"] = 500,
+        ["Banana"] = 500,
+        ["Grape"] = 500,
+        ["Coconut"] = 500,
+        ["Mango"] = 500,
+        ["Dragon Fruit"] = 500,
+        ["Acorn"] = 500,
+        ["Cherry"] = 500,
+        ["Sunflower"] = 500,
+        ["Venus Fly Trap"] = 500,
+        ["Pomegranate"] = 500,
+        ["Poison Apple"] = 500,
+        ["Moon Bloom"] = 500,
+        ["Dragon's Breath"] = 500,
+    },
+
+    SELL_ALL_DELAY = 20,
+    EXPAND_PLOT = false,
+    BUY_GEAR = {["Common Watering Can"] = 2, ["Common Sprinkler"] = 2,},  -- ["Gear Name"] = Amount
+    BUY_CRATE = {},  -- ["Crate Name"] = Amount
+    USE_SPRINKLER = {"Common Sprinkler"},  -- "Sprinkler Name"
+
+    -- Auto Mail
+    AUTO_MAIL_USERNAME = {"xindalox7"},  -- Username (Randomized)
+    AUTO_MAIL_ITEM_NAME = { ["Rainbow"] = 2,  ["Gold"] = 2 },  -- ["Item Name"] = Amount
+    COLLECT_MAIL = true,
+
+    -- Discord
+    WEBHOOK_PET_NAME = {},
+    WEBHOOK_PET_RARITY = { "Mythic", "Super", "Secret" },
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1157111330210328586/u2w9cHwgoCSuVS2tNUQUN9lEEw4y7_pnqSrh6CdDo7wMKvi6zoCVkm_o_hmdegfgA-bw",
+    DISCORD_ID = "1514281114527596555",
+    WEBHOOK_NOTE = "gg",  -- Private Webhook
+    SHOW_PUBLIC_DISCORD_ID = false,
+    SHOW_WEBHOOK_USERNAME = true,  -- Private Webhook
+    SHOW_WEBHOOK_JOBID = true,  -- Private Webhook
+}
