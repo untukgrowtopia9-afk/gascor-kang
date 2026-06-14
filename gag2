@@ -1,4 +1,4 @@
-setfpscap(10)
+setfpscap(20)
 
 getgenv().GAG2Config = {
     AUTO_UPDATE_RESTART = true,
