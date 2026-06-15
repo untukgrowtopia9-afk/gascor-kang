@@ -2,19 +2,18 @@ getgenv().GAG2Config = {
     AUTO_UPDATE_RESTART = true,
 
     BUY_PET = {  -- ["Pet Name"] = Amount
-        ["Monkey"] = 99, 
-        ["Bee"] = 99, 
         ["Black Dragon"] = 99, 
         ["Golden Dragonfly"] = 99, 
         ["Unicorn"] = 99, 
         ["Raccoon"] = 99, 
         ["Ice Serpent"] = 99,
-
-        ["Robin"] = 5,
-        ["Deer"] = 5,
     },
 
     EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
+        {"Unicorn", 5, 1}, 
+        {"GoldenDragonfly", 10, 2},
+        {"Robin", 5, 3},
+        {"Deer", 5, 4},
     },
 
     PLANT_SEED = {  -- ["Seed Name"] = Amount
@@ -56,12 +55,12 @@ getgenv().GAG2Config = {
         ["Corn"] = 4,
         ["Cactus"] = 4,
         ["Pineapple"] = 4,
-        ["Mushroom"] = 500,
-        ["Green Bean"] = 500,
-        ["Banana"] = 500,
-        ["Grape"] = 500,
-        ["Coconut"] = 500,
-        ["Mango"] = 500,
+        ["Mushroom"] = 50,
+        ["Green Bean"] = 50,
+        ["Banana"] = 50,
+        ["Grape"] = 50,
+        ["Coconut"] = 50,
+        ["Mango"] = 50,
         ["Dragon Fruit"] = 500,
         ["Acorn"] = 500,
         ["Cherry"] = 500,
@@ -81,7 +80,7 @@ getgenv().GAG2Config = {
 
     -- Auto Mail
     AUTO_MAIL_USERNAME = {"xindalox7"},  -- Username (Randomized)
-    AUTO_MAIL_ITEM_NAME = { ["Rainbow"] = 1,  ["Gold"] = 1, ["Monkey"] = 1, ["Bee"] = 1, ["Black Dragon"] = 1, ["Golden Dragonfly"] = 1, ["Unicorn"] = 1, ["Raccoon"] = 1, ["Ice Serpent"] = 1 },  -- ["Item Name"] = Amount
+    AUTO_MAIL_ITEM_NAME = { ["Rainbow"] = 1,  ["Gold"] = 1, ["Monkey"] = 1, ["Bee"] = 1, ["Black Dragon"] = 1, ["Golden Dragonfly"] = 1, ["Unicorn"] = 1, ["Raccoon"] = 1, ["Ice Serpent"] = 1,  ["Venus Fly Trap"] = 1, ["Pomegranate"] = 1, ["Poison Apple"] = 1, ["Moon Bloom"] = 1, ["Dragon's Breath"] = 1, },  -- ["Item Name"] = Amount
     COLLECT_MAIL = true,
 
     -- Discord
