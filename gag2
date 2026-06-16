@@ -42,8 +42,6 @@ getgenv().GAG2Config = {
         ["Poison Apple"] = 50,
         ["Moon Bloom"] = 50,
         ["Dragon's Breath"] = 50,
-        ["Rainbow"] = 5,
-        ["Gold"] = 15,
     },
 
     BUY_SEED = {  -- ["Seed Name"] = Amount
@@ -74,9 +72,13 @@ getgenv().GAG2Config = {
         ["Dragon's Breath"] = 500,
     },
 
+    COLLECT_PLANT_IF_MUTATED = { "Bamboo", "Mushroom", "Green Bean" },  -- Only collect fruit when have ANY mutation
+    FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
+
     SELL_ALL_DELAY = 20,
-    EXPAND_PLOT = false,
-    BUY_GEAR = {["Common Watering Can"] = 2, ["Common Sprinkler"] = 2,},  -- ["Gear Name"] = Amount
+    FOCUS_RAINBOW_GOLD_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
+    EXPAND_PLOT = 2,  -- 0 = No expand, 3 = expand plot 3 times
+    BUY_GEAR = {["Common Watering Can"] = 2, ["Common Sprinkler"] = 2,}, ["Super Sprinkler"] = 2,},  -- ["Gear Name"] = Amount
     BUY_CRATE = {},  -- ["Crate Name"] = Amount
     USE_SPRINKLER = {"Common Sprinkler"},  -- "Sprinkler Name"
 
