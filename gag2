@@ -1,4 +1,4 @@
-script_key="";
+
 getgenv().GAG2Config = {
     FPS_CAP = 5,
     AUTO_UPDATE_RESTART = true,
@@ -104,5 +104,3 @@ getgenv().GAG2Config = {
     SHOW_WEBHOOK_USERNAME = true,  -- Private Webhook
     SHOW_WEBHOOK_JOBID = true,  -- Private Webhook
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/c9ea3aa6c782de82dee4bcf6b9a9d03e.lua"))()
