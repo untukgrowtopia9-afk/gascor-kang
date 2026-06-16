@@ -42,6 +42,8 @@ getgenv().GAG2Config = {
         ["Poison Apple"] = 50,
         ["Moon Bloom"] = 50,
         ["Dragon's Breath"] = 50,
+        ["Rainbow"] = 5,
+        ["Gold"] = 15,
     },
 
     BUY_SEED = {  -- ["Seed Name"] = Amount
