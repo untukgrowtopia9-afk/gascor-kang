@@ -1,9 +1,8 @@
-
 getgenv().GAG2Config = {
-    FPS_CAP = 5,
+    FPS_CAP = 5,  -- Ini hanya sebagai catatan, script utama tidak akan baca ini! Tetap butuh setfpscap() di luar.
     AUTO_UPDATE_RESTART = true,
 
-    BUY_PET = {  -- ["Pet Name"] = Amount
+    BUY_PET = {
         ["Monkey"] = 99, 
         ["Bee"] = 99, 
         ["BlackDragon"] = 99, 
@@ -11,19 +10,18 @@ getgenv().GAG2Config = {
         ["Unicorn"] = 99, 
         ["Raccoon"] = 99, 
         ["IceSerpent"] = 99,
-
         ["Robin"] = 5,
         ["Deer"] = 5,
     },
 
-    EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
+    EQUIP_PET = {
         {"Unicorn", 5, 1}, 
         {"GoldenDragonfly", 10, 2},
         {"Robin", 5, 3},
         {"Deer", 5, 4},
     },
 
-    PLANT_SEED = {  -- ["Seed Name"] = Amount
+    PLANT_SEED = {
         ["Carrot"] = 10, 
         ["Strawberry"] = 10,
         ["Blueberry"] = 10,
@@ -51,7 +49,7 @@ getgenv().GAG2Config = {
         ["Dragon's Breath"] = 50,
     },
 
-    BUY_SEED = {  -- ["Seed Name"] = Amount
+    BUY_SEED = {
         ["Carrot"] = 10, 
         ["Strawberry"] = 4,
         ["Blueberry"] = 4,
@@ -79,28 +77,41 @@ getgenv().GAG2Config = {
         ["Dragon's Breath"] = 500,
     },
 
-    COLLECT_PLANT_IF_MUTATED = { "Bamboo", "Mushroom", "Green Bean" },  -- Only collect fruit when have ANY mutation
-    FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
+    COLLECT_PLANT_IF_MUTATED = { "Bamboo", "Mushroom", "Green Bean" },
+    FAVOURITE_FRUIT = {},
 
     SELL_ALL_DELAY = 20,
-    FOCUS_RAINBOW_GOLD_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
-    EXPAND_PLOT = 2,  -- 0 = No expand, 3 = expand plot 3 times
-    BUY_GEAR = {["Common Watering Can"] = 2, ["Common Sprinkler"] = 2, ["Super Sprinkler"] = 2,},  -- ["Gear Name"] = Amount
-    BUY_CRATE = {},  -- ["Crate Name"] = Amount
-    USE_SPRINKLER = {"Common Sprinkler"},  -- "Sprinkler Name"
+    FOCUS_RAINBOW_GOLD_SEED = true,
+    EXPAND_PLOT = 2,
+    BUY_GEAR = {["Common Watering Can"] = 2, ["Common Sprinkler"] = 2, ["Super Sprinkler"] = 2},
+    BUY_CRATE = {},
+    USE_SPRINKLER = {"Common Sprinkler"},
 
-    -- Auto Mail
-    AUTO_MAIL_USERNAME = {"Xaluvia2","Xotyrex9","xenvora1"},  -- Username (Randomized)
-    AUTO_MAIL_ITEM_NAME = { ["Rainbow"] = 1,  ["Gold"] = 1, ["Monkey"] = 1, ["Bee"] = 1, ["Black Dragon"] = 1, ["Golden Dragonfly"] = 1, ["Unicorn"] = 1, ["Raccoon"] = 1, ["Ice Serpent"] = 1,  ["Venus Fly Trap"] = 1, ["Pomegranate"] = 1, ["Poison Apple"] = 1, ["Moon Bloom"] = 1, ["Dragon's Breath"] = 1, },  -- ["Item Name"] = Amount
+    AUTO_MAIL_USERNAME = {"Xaluvia2","Xotyrex9","xenvora1"},
+    AUTO_MAIL_ITEM_NAME = {
+        ["Rainbow"] = 1, 
+        ["Gold"] = 1, 
+        ["Monkey"] = 1, 
+        ["Bee"] = 1, 
+        ["Black Dragon"] = 1, 
+        ["Golden Dragonfly"] = 1, 
+        ["Unicorn"] = 1, 
+        ["Raccoon"] = 1, 
+        ["Ice Serpent"] = 1, 
+        ["Venus Fly Trap"] = 1, 
+        ["Pomegranate"] = 1, 
+        ["Poison Apple"] = 1, 
+        ["Moon Bloom"] = 1, 
+        ["Dragon's Breath"] = 1,
+    },
     COLLECT_MAIL = true,
 
-    -- Discord
     WEBHOOK_PET_NAME = {},
     WEBHOOK_PET_RARITY = { "Mythic", "Super", "Secret" },
     WEBHOOK_URL = "https://discord.com/api/webhooks/1157111330210328586/u2w9cHwgoCSuVS2tNUQUN9lEEw4y7_pnqSrh6CdDo7wMKvi6zoCVkm_o_hmdegfgA-bw",
     DISCORD_ID = "1514281114527596555",
-    WEBHOOK_NOTE = "gg",  -- Private Webhook
+    WEBHOOK_NOTE = "gg",
     SHOW_PUBLIC_DISCORD_ID = false,
-    SHOW_WEBHOOK_USERNAME = true,  -- Private Webhook
-    SHOW_WEBHOOK_JOBID = true,  -- Private Webhook
+    SHOW_WEBHOOK_USERNAME = true,
+    SHOW_WEBHOOK_JOBID = true,
 }
