@@ -81,7 +81,7 @@ getgenv().GAG2Config = {
     USE_SPRINKLER = {"Common Sprinkler"},  -- "Sprinkler Name"
 
     -- Auto Mail
-    AUTO_MAIL_USERNAME = {"xindalox7"},  -- Username (Randomized)
+    AUTO_MAIL_USERNAME = {"Xaluvia2","Xotyrex9","xenvora1"},  -- Username (Randomized)
     AUTO_MAIL_ITEM_NAME = { ["Rainbow"] = 1,  ["Gold"] = 1, ["Monkey"] = 1, ["Bee"] = 1, ["Black Dragon"] = 1, ["Golden Dragonfly"] = 1, ["Unicorn"] = 1, ["Raccoon"] = 1, ["Ice Serpent"] = 1,  ["Venus Fly Trap"] = 1, ["Pomegranate"] = 1, ["Poison Apple"] = 1, ["Moon Bloom"] = 1, ["Dragon's Breath"] = 1, },  -- ["Item Name"] = Amount
     COLLECT_MAIL = true,
 
