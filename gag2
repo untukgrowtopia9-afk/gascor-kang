@@ -1,5 +1,4 @@
 getgenv().GAG2Config = {
-    FPS_CAP = 5,  -- Ini hanya sebagai catatan, script utama tidak akan baca ini! Tetap butuh setfpscap() di luar.
     AUTO_UPDATE_RESTART = true,
 
     BUY_PET = {
