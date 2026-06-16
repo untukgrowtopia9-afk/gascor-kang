@@ -1,12 +1,19 @@
+script_key="";
 getgenv().GAG2Config = {
+    FPS_CAP = 5,
     AUTO_UPDATE_RESTART = true,
 
     BUY_PET = {  -- ["Pet Name"] = Amount
-        ["Black Dragon"] = 99, 
-        ["Golden Dragonfly"] = 99, 
+        ["Monkey"] = 99, 
+        ["Bee"] = 99, 
+        ["BlackDragon"] = 99, 
+        ["GoldenDragonfly"] = 99, 
         ["Unicorn"] = 99, 
         ["Raccoon"] = 99, 
-        ["Ice Serpent"] = 99,
+        ["IceSerpent"] = 99,
+
+        ["Robin"] = 5,
+        ["Deer"] = 5,
     },
 
     EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
@@ -18,15 +25,15 @@ getgenv().GAG2Config = {
 
     PLANT_SEED = {  -- ["Seed Name"] = Amount
         ["Carrot"] = 10, 
-        ["Strawberry"] = 4,
-        ["Blueberry"] = 4,
-        ["Tulip"] = 4,
-        ["Tomato"] = 4,
-        ["Apple"] = 4,
-        ["Bamboo"] = 50,
-        ["Corn"] = 4,
-        ["Cactus"] = 4,
-        ["Pineapple"] = 4,
+        ["Strawberry"] = 10,
+        ["Blueberry"] = 10,
+        ["Tulip"] = 10,
+        ["Tomato"] = 10,
+        ["Apple"] = 10,
+        ["Bamboo"] = 1000,
+        ["Corn"] = 10,
+        ["Cactus"] = 10,
+        ["Pineapple"] = 10,
         ["Mushroom"] = 50,
         ["Green Bean"] = 50,
         ["Banana"] = 50,
@@ -60,7 +67,7 @@ getgenv().GAG2Config = {
         ["Banana"] = 50,
         ["Grape"] = 50,
         ["Coconut"] = 50,
-        ["Mango"] = 50,
+        ["Mango"] = 0,
         ["Dragon Fruit"] = 500,
         ["Acorn"] = 500,
         ["Cherry"] = 500,
@@ -97,3 +104,5 @@ getgenv().GAG2Config = {
     SHOW_WEBHOOK_USERNAME = true,  -- Private Webhook
     SHOW_WEBHOOK_JOBID = true,  -- Private Webhook
 }
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/c9ea3aa6c782de82dee4bcf6b9a9d03e.lua"))()
