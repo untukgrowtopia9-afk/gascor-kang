@@ -25,7 +25,8 @@ getgenv().GAG2Config = {
     },
 
     PLANT_SEED = {
-        ["Carrot"] = 100, 
+        ["Gold"] = 1000, 
+        ["Carrot"] = 1000, 
         ["Strawberry"] = 500,
         ["Blueberry"] = 500,
         ["Tulip"] = 500,
@@ -39,8 +40,8 @@ getgenv().GAG2Config = {
         ["Green Bean"] = 500,
         ["Banana"] = 500,
         ["Grape"] = 500,
-        ["Coconut"] = 100,
-        ["Mango"] = 100,
+        ["Coconut"] = 1000,
+        ["Mango"] = 1000,
         ["Dragon Fruit"] = 500,
         ["Acorn"] = 500,
         ["Cherry"] = 500,
@@ -52,7 +53,7 @@ getgenv().GAG2Config = {
         ["Dragon's Breath"] = 500,
     },
 
-    PLANT_SEED = {
+    BUY_SEED = {
         ["Carrot"] = 100, 
         ["Strawberry"] = 500,
         ["Blueberry"] = 500,
