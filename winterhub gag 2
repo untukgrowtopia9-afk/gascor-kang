@@ -87,7 +87,7 @@ _G.GAGConfig = _G.GAGConfig or {
         -- PETS have no stack count — omit Count to send all spare ones, or set N for that many; your EQUIPPED
         -- pets are NEVER sent.
         ["Send"] = {
-            "Moon Bloom", "Dragon's Breath", "Gold", "Rainbow", "Venus Fly Trap", "Deer", "GoldenDragonfly", "Unicorn", "Robin", "Raccoon", "Super Sprinkler", "Legendary Sprinkler", "Super Watering Can"
+            "Moon Bloom", "Dragon's Breath", "Gold", "Rainbow", "Venus Fly Trap", "GoldenDragonfly", "Unicorn", "Robin", "Raccoon", "Super Sprinkler", "Legendary Sprinkler", "Super Watering Can"
         },
     },
     ["Misc"] = {
