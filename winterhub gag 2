@@ -81,7 +81,7 @@ _G.GAGConfig = _G.GAGConfig or {
         ["Auto Claim"] = true,       -- automatically claim items sent to your mailbox (free items / gifts)
         -- AUTO-SEND: mail items to another account automatically (e.g. funnel an alt -> your main). You can send
         -- seeds / gear / pets — NOT fruit (fruit can't be mailed). ⚠️ this GIVES ITEMS AWAY for real.
-        ["Send To"] = "xindalox7",            -- the username to send to. BLANK = sending OFF.
+        ["Send To"] = "xaluvia2",            -- the username to send to. BLANK = sending OFF.
         -- Send: items to keep sending. Category = inventory tab (Seeds / Sprinklers / Pets / Mushrooms / ...);
         -- Item = the in-game item name. Count = how many (or "all" / omit = send everything you have).
         -- PETS have no stack count — omit Count to send all spare ones, or set N for that many; your EQUIPPED
