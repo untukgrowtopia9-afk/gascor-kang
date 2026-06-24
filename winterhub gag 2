@@ -2,7 +2,7 @@ _G.GAGConfig = _G.GAGConfig or {
     ["Harvest"] = {
         ["Auto Harvest"]  = true,             -- true / false  (false = never harvest/sell)
         ["Sell At"]       = 95,               -- number
-        ["Sell Every"]    = 40,               -- seconds (0 = off)
+        ["Sell Every"]    = 0,               -- seconds (0 = off)
         ["Only Harvest"]  = {},               -- e.g. { "Watermelon", "Apple" }
         ["Don't Harvest"] = {},               -- e.g. { "Carrot", "Tomato" }
     },
