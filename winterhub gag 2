@@ -1,17 +1,19 @@
 _G.GAGConfig = _G.GAGConfig or {
     ["Harvest"] = {
-        ["Sell At"]       = 90,      -- sell once your backpack holds this many fruit
-        ["Sell Every"]    = 20,      -- also sell every N seconds while holding fruit (steady cash); 0 = off
-        ["Only Harvest"]  = {},      -- if set, harvest ONLY these. e.g. { Watermelon = true }
-        ["Don't Harvest"] = {},      -- never harvest these (leave them growing). e.g. { Carrot = true }
+        ["Auto Harvest"]  = true,             -- true / false  (false = never harvest/sell)
+        ["Sell At"]       = 95,               -- number
+        ["Sell Every"]    = 40,               -- seconds (0 = off)
+        ["Only Harvest"]  = {},               -- e.g. { "Watermelon", "Apple" }
+        ["Don't Harvest"] = {},               -- e.g. { "Carrot", "Tomato" }
     },
     ["Planting"] = {
+        ["Auto Plant"]  = true,               -- true / false  (false = never buy/plant; also stops expand/replace)
         ["Plant Plan"]  = {
         ["Gold"] = 1000, 
         ["Carrot"] = 10, 
         ["Strawberry"] = 10,
         ["Blueberry"] = 5,
-        ["Tulip"] = 50,
+        ["Tulip"] = 10,
         ["Tomato"] = 10,
         ["Apple"] = 10,
         ["Bamboo"] = 100,
@@ -19,9 +21,8 @@ _G.GAGConfig = _G.GAGConfig or {
         ["Cactus"] = 5,
         ["Pineapple"] = 5,
         ["Mushroom"] = 100,
-        ["Green Bean"] = 10,
-        ["Banana"] = 10,
-        ["Grape"] = 10,
+        ["Banana"] = 50,
+        ["Grape"] = 50,
         ["Coconut"] = 1000,
         ["Mango"] = 1000,
         ["Dragon Fruit"] = 500,
@@ -32,13 +33,14 @@ _G.GAGConfig = _G.GAGConfig or {
         ["Pomegranate"] = 500,
         ["Poison Apple"] = 500,
         ["Moon Bloom"] = 500,
-        ["Dragon's Breath"] = 500,
-        },
-        ["Layout"]      = "compact",
-        ["Don't Plant"] = {},
-        ["Keep Seeds"] = {
-            ["Dragon's Breath"] = 55, ["Moon Bloom"] = 55,         ["Venus Fly Trap"] = 55,                                  -- rare super seeds (high resale)
-            ["Gold"] = 55, ["Rainbow"] = 55,      -- event seeds
+        ["Dragon's Breath"] = 500,},                 -- e.g. { Apple = 50, ["Dragon Fruit"] = 20 }  (keep N planted, then auto-fill)
+        ["Only Plant"]  = {},                 -- e.g. { "Bamboo", "Apple" }  (plant ONLY these)
+        ["Layout"]      = "compact",          -- "compact" / "spread"
+        ["Don't Plant"] = {},                 -- e.g. { "Carrot", "Green Bean" }
+        ["Don't Buy"]   = {},                 -- e.g. { "Mango", "Coconut" }
+        ["Keep Seeds"]  = {                   -- e.g. { ["Moon Bloom"] = 5, Gold = 15 }  (keep N UNPLANTED)
+            ["Dragon's Breath"] = 5, ["Moon Bloom"] = 5,
+            ["Gold"] = 15, ["Rainbow"] = 5,
         },
     },
     ["Money"] = {
@@ -48,56 +50,52 @@ _G.GAGConfig = _G.GAGConfig or {
         ["Expand If Over"]     = 1500000,  -- only spend on an expansion when your cash is above this
         ["Auto Replace Plants"] = true,    -- when the plot is full, dig up low-value plants and plant better ones
     },
-    ["Never Sell"] = {               -- protect favourite fruit from being sold (keep only a few trophies — they fill your bag)
-        ["By Mutation"] = {},        -- keep any fruit with this mutation.  e.g. { Rainbow = true, Gold = true }
-        ["By Fruit"]    = {},        -- keep this fruit, any mutation.       e.g. { ["Dragon Fruit"] = true }
-        ["Exact"]       = {},        -- keep one exact fruit+mutation.       e.g. { { fruit = "Carrot", mut = "Gold" } }
+    ["Never Sell"] = {                        -- protect fruit from being sold
+        ["By Mutation"] = {},                 -- e.g. { "Rainbow", "Gold" }
+        ["By Fruit"]    = {},                 -- e.g. { "Dragon Fruit" }
+        ["Exact"]       = {},                 -- e.g. { { fruit = "Carrot", mut = "Gold" } }
     },
-    ["Pets"] = {                     -- auto-buy wild pets + equip your best loadout
-        ["Buy"]   = { Unicorn = true, GoldenDragonfly = true},   -- Unicorn 2x Rainbow / GoldenDragonfly 2x Gold / Deer growth / Robin drops seeds
-        ["Equip"] = { Unicorn = 1, GoldenDragonfly = 1, Deer = 4 },   -- the pets to keep equipped (auto-equips the ones you own)
-        ["Auto Buy Slots"] = true,   -- automatically buy extra pet slots (3 -> 6, costs 200k/1M/5M) to fit your Equip loadout
-        ["Max Pet Slots"]  = 4,      -- never buy past this many slots (3-6). lower = stop earlier / spend less (6 = full)
+    ["Pets"] = {
+        ["Buy"]            = { "Unicorn", "GoldenDragonfly"},   -- list = tame UNLIMITED; OR caps { Robin = 6, Deer = 6 } = stop once you OWN N of that species; mix ok { "Unicorn", Deer = 6 }
+        ["Equip"]          = { Deer = 4 },    -- e.g. { Deer = 4, Unicorn = 1 }  (name = how many)
+        ["Auto Buy Slots"] = true,            -- true / false
+        ["Max Pet Slots"]  = 4,               -- number 3..6
     },
     ["Gear"] = {
-        ["Auto Buy"]           = true,             -- master on/off for buying & placing gear below
-        ["Keep Cash"]          = 15000,            -- only spend on gear when your cash is above this
-        ["Sprinkler Coverage"] = "concentrate",    -- where sprinklers go: "concentrate" (on your best plants) / "value" / "spread"
-        ["Place Sprinklers"] = { ["best"] = 4 },
-        ["Best Sprinkler Up To"] = "Common Sprinkler",
-        ["Keep Gear"] = { 	["Super Watering Can"] = 155, ["Super Sprinkler"] = 155, ["Super Watering Can"] = 155 },   -- gear to buy & keep on hand (Supersize Mushroom = bigger fruit)
-        ["Buy Gear"]  = { ["Super Sprinkler"] = true, ["Legendary Sprinkler"] = true , ["Super Watering Can"] = true },   -- extra gear to grab whenever in stock. (Sprinklers are NOT here: Place buys one on-demand right before placing, so none sit unused in your bag.) e.g. { ["Trowel"] = true }
+        ["Auto Buy"]             = true,            -- true / false
+        ["Keep Cash"]            = 15000,           -- number
+        ["Sprinkler Coverage"]   = "concentrate",   -- "concentrate" / "value" / "spread"
+        ["Place Sprinklers"]     = { ["best"] = 4 },          -- e.g. { ["best"] = 4 } or { ["Rare Sprinkler"] = 2 }
+        ["Best Sprinkler Up To"] = "Common Sprinkler",          -- "Common/Uncommon/Rare/Super/Legendary Sprinkler"
+        ["Keep Gear"]            = { 	["Super Watering Can"] = 155, ["Super Sprinkler"] = 155, ["Super Watering Can"] = 155 },   -- e.g. { ["Trowel"] = 1 }  (buy & hold N)
+        ["Buy Gear"]             = { "Super Sprinkler", "Super Watering Can" },   -- e.g. { "Trowel" }  (buy & keep, never placed)
     },
     ["Event Seeds"] = {
         ["Auto Claim"] = true,       -- automatically grab seed packs that drop during events
     },
     ["Mail"] = {
-        ["Auto Claim"] = true,       -- automatically claim items sent to your mailbox (free items / gifts)
-        -- AUTO-SEND: mail items to another account automatically (e.g. funnel an alt -> your main). You can send
-        -- seeds / gear / pets — NOT fruit (fruit can't be mailed). ⚠️ this GIVES ITEMS AWAY for real.
-        ["Send To"] = "xaluvia2",            -- the username to send to. BLANK = sending OFF.
-        -- Send: items to keep sending. Category = inventory tab (Seeds / Sprinklers / Pets / Mushrooms / ...);
-        -- Item = the in-game item name. Count = how many (or "all" / omit = send everything you have).
-        -- PETS have no stack count — omit Count to send all spare ones, or set N for that many; your EQUIPPED
-        -- pets are NEVER sent.
-        ["Send"] = {
+        ["Auto Claim"] = true,                -- true / false
+        ["Send To"]    = "xindalox7",                  -- username to funnel items to ("" = off)
+        ["Send"]       = {
             "Moon Bloom", "Dragon's Breath", "Gold", "Rainbow", "Venus Fly Trap", "GoldenDragonfly", "Unicorn", "Robin", "Raccoon", "Super Sprinkler", "Legendary Sprinkler", "Super Watering Can"
         },
     },
     ["Misc"] = {
-        ["Auto Return To Garden"] = true,   -- if you get teleported/stuck far away, automatically return to your garden
-        ["Show Stats"]            = true,   -- show the on-screen farm-stats panel (bottom-left corner)
-        ["Smart Travel"]          = true,   -- to reach a FAR pet/seed, teleport to the nearest hub (Seeds/Sell/Garden) first, then walk
+        ["Auto Return To Garden"] = true,     -- true / false
+        ["Show Stats"]            = true,     -- true / false
+        ["Smart Travel"]          = true,     -- true / false
+        ["Auto Daily Deal"]       = true,     -- true / false
+        ["Walk Speed"]            = 35,       -- number 16..35  (travel speed; 30 = stable. Lower toward 25 if Fast Travel ever snaps you back)
+        ["Fast Travel"]           = false,    -- true / false  (on = noclip-SLIDE travel: same speed at ANY fps; falls back to walking if yanked. off = plain walking)
     },
     ["Performance"] = {
-        -- LOW-RESOURCE MODE for weak PCs. Low Graphics + Remove Other Gardens only change VISUALS — never the farming
-        -- (server-side remotes). FPS Cap is different — it's ALSO the farm's logic rate, so pick what suits you.
-        ["FPS Cap"]      = 0,    -- frame rate cap = ALSO the farm's logic/movement rate, so LOW = slow + choppy farm
-                                  -- (not just visuals); high = snappier. Set whatever fps you want; 0 = uncapped. The
-                                  -- savings are Low Graphics + Remove Other Gardens below (they cut per-frame work so
-                                  -- a high fps stays cheap, since 3D rendering's already off via Show Stats).
-        ["Low Graphics"] = true,   -- drop render quality to the minimum (textures/shadows/effects) — saves GPU & memory.
-        ["Remove Other Gardens"] = true,   -- (needs Low Graphics on) delete OTHER players' gardens locally = big memory save, but you won't see neighbors. false = keep them visible.
-        ["Hide Crop Visuals"] = true,     -- make YOUR OWN plants invisible — the biggest GPU saver when you watch the bot (they still grow + get harvested normally, you just won't see them). great for weak PCs. false = see your crop.
+        ["FPS Cap"]              = 5,        -- number (0 = uncapped; also the farm's logic/movement rate)
+        ["Low Graphics"]         = true,      -- true / false
+        ["Remove Other Gardens"] = true,      -- true / false  (needs Low Graphics)
+        ["Hide Crop Visuals"]    = true,      -- true / false  (hide your own plants; they still grow & harvest)
+    },
+    ["Debug"] = {
+        ["Log To File"] = false,   -- true / false  (writes GAG_LOG_<name>.txt — a timestamped log of what the farm did + WHY it skipped something)
+        ["Console"]     = false,   -- true / false  (also print log lines to the executor console). Or a list to filter, e.g. { "REPLACE", "ERROR" }
     },
 }
