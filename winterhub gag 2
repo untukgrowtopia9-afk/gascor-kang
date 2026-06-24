@@ -1,6 +1,6 @@
 _G.GAGConfig = _G.GAGConfig or {
     ["Harvest"] = {
-        ["Sell At"]       = 100,      -- sell once your backpack holds this many fruit
+        ["Sell At"]       = 90,      -- sell once your backpack holds this many fruit
         ["Sell Every"]    = 20,      -- also sell every N seconds while holding fruit (steady cash); 0 = off
         ["Only Harvest"]  = {},      -- if set, harvest ONLY these. e.g. { Watermelon = true }
         ["Don't Harvest"] = {},      -- never harvest these (leave them growing). e.g. { Carrot = true }
@@ -44,7 +44,7 @@ _G.GAGConfig = _G.GAGConfig or {
     ["Money"] = {
         ["Keep Cash"]          = 0,    -- always keep at least this much money
         ["Auto Expand Plot"]   = true,     -- buy plot expansions automatically
-        ["Max Expansions"]     = 3,        -- cap how many expansions to auto-BUY this run. 0 = no limit; default 3 = stop after 3 (raise for a bigger plot)
+        ["Max Expansions"]     = 2,        -- cap how many expansions to auto-BUY this run. 0 = no limit; default 3 = stop after 3 (raise for a bigger plot)
         ["Expand If Over"]     = 1500000,  -- only spend on an expansion when your cash is above this
         ["Auto Replace Plants"] = true,    -- when the plot is full, dig up low-value plants and plant better ones
     },
@@ -54,22 +54,16 @@ _G.GAGConfig = _G.GAGConfig or {
         ["Exact"]       = {},        -- keep one exact fruit+mutation.       e.g. { { fruit = "Carrot", mut = "Gold" } }
     },
     ["Pets"] = {                     -- auto-buy wild pets + equip your best loadout
-        ["Buy"]   = { Unicorn = true, GoldenDragonfly = true, Deer = true, Robin = true },   -- Unicorn 2x Rainbow / GoldenDragonfly 2x Gold / Deer growth / Robin drops seeds
+        ["Buy"]   = { Unicorn = true, GoldenDragonfly = true},   -- Unicorn 2x Rainbow / GoldenDragonfly 2x Gold / Deer growth / Robin drops seeds
         ["Equip"] = { Unicorn = 1, GoldenDragonfly = 1, Deer = 4 },   -- the pets to keep equipped (auto-equips the ones you own)
         ["Auto Buy Slots"] = true,   -- automatically buy extra pet slots (3 -> 6, costs 200k/1M/5M) to fit your Equip loadout
-        ["Max Pet Slots"]  = 6,      -- never buy past this many slots (3-6). lower = stop earlier / spend less (6 = full)
+        ["Max Pet Slots"]  = 4,      -- never buy past this many slots (3-6). lower = stop earlier / spend less (6 = full)
     },
     ["Gear"] = {
         ["Auto Buy"]           = true,             -- master on/off for buying & placing gear below
         ["Keep Cash"]          = 15000,            -- only spend on gear when your cash is above this
         ["Sprinkler Coverage"] = "concentrate",    -- where sprinklers go: "concentrate" (on your best plants) / "value" / "spread"
-        -- Place Sprinklers: which sprinklers to keep placed. "best" (recommended) = automatically buy & place the
-        --   best one IN STOCK you can afford (up to the limit below), switching between Common/Uncommon/Rare as the
-        --   shop restocks. Or name exact tiers, e.g. { ["Common Sprinkler"]=2, ["Rare Sprinkler"]=2 } (but that only
-        --   buys a tier when THAT exact one is in stock).
         ["Place Sprinklers"] = { ["best"] = 4 },
-        -- Best Sprinkler Up To: when using "best", never auto-place above this tier — so your valuable Super /
-        --   Legendary sprinklers are kept to SELL instead of being used up. (Rare and below are cheap.)
         ["Best Sprinkler Up To"] = "Common Sprinkler",
         ["Keep Gear"] = { 	["Super Watering Can"] = 155, ["Super Sprinkler"] = 155, ["Super Watering Can"] = 155 },   -- gear to buy & keep on hand (Supersize Mushroom = bigger fruit)
         ["Buy Gear"]  = { ["Super Sprinkler"] = true, ["Legendary Sprinkler"] = true , ["Super Watering Can"] = true },   -- extra gear to grab whenever in stock. (Sprinklers are NOT here: Place buys one on-demand right before placing, so none sit unused in your bag.) e.g. { ["Trowel"] = true }
@@ -98,7 +92,7 @@ _G.GAGConfig = _G.GAGConfig or {
     ["Performance"] = {
         -- LOW-RESOURCE MODE for weak PCs. Low Graphics + Remove Other Gardens only change VISUALS — never the farming
         -- (server-side remotes). FPS Cap is different — it's ALSO the farm's logic rate, so pick what suits you.
-        ["FPS Cap"]      = 10,    -- frame rate cap = ALSO the farm's logic/movement rate, so LOW = slow + choppy farm
+        ["FPS Cap"]      = 0,    -- frame rate cap = ALSO the farm's logic/movement rate, so LOW = slow + choppy farm
                                   -- (not just visuals); high = snappier. Set whatever fps you want; 0 = uncapped. The
                                   -- savings are Low Graphics + Remove Other Gardens below (they cut per-frame work so
                                   -- a high fps stays cheap, since 3D rendering's already off via Show Stats).
