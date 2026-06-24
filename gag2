@@ -3,17 +3,7 @@ getgenv().GAG2Config = {
     AUTO_UPDATE_RESTART = true,
     COLLECT_FRUIT_DELAY = 20,
 
-    BUY_PET = {  -- ["Pet Name"] = Amount
-        ["Big Monkey"] = 99, 
-        ["Big Bee"] = 99, 
-        ["BlackDragon"] = 99, 
-        ["GoldenDragonfly"] = 99, 
-        ["Unicorn"] = 99,
-        ["Raccoon"] = 99, 
-        ["IceSerpent"] = 99,
-
-        ["Huge Bunny"] = 5,
-        ["Huge Robin"] = 5,
+    BUY_PET = {
     },
 
     EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
