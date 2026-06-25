@@ -12,7 +12,6 @@ getgenv().GAG2Config = {
     },
 
     PLANT_SEED = {
-        ["Gold"] = 1000, 
         ["Carrot"] = 10, 
         ["Strawberry"] = 10,
         ["Blueberry"] = 10,
@@ -68,7 +67,7 @@ getgenv().GAG2Config = {
     FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
 
     SELL_ALL_DAILY_DEAL = true,
-    SELL_ALL_DELAY = 30,
+    SELL_ALL_DELAY = 40,
     FOCUS_RAINBOW_GOLD_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
     EXPAND_PLOT = 3,  -- 0 = No expand, 3 = expand plot 3 times
     BUY_GEAR = { ["Super Watering Can"] = 9999,
