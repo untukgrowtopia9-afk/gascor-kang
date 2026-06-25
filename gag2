@@ -4,13 +4,11 @@ getgenv().GAG2Config = {
     COLLECT_FRUIT_DELAY = 30,
 
     BUY_PET = {
+        ["Bunny"] = 6,
     },
 
     EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
-        {"Unicorn", 5, 1}, 
-        {"GoldenDragonfly", 10, 2},
-        {"Robin", 5, 3},
-        {"Bunny", 5, 4},
+        {"Bunny", 6, 1},
     },
 
     PLANT_SEED = {
