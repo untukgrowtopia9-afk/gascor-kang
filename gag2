@@ -1,7 +1,7 @@
 getgenv().GAG2Config = {
-    FPS_CAP = 7,  -- MUST USE 5+ FPS FOR TWEENING
+    FPS_CAP = 10,  -- MUST USE 5+ FPS FOR TWEENING
     AUTO_UPDATE_RESTART = true,
-    COLLECT_FRUIT_DELAY = 20,
+    COLLECT_FRUIT_DELAY = 30,
 
     BUY_PET = {
     },
@@ -70,7 +70,7 @@ getgenv().GAG2Config = {
     FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
 
     SELL_ALL_DAILY_DEAL = true,
-    SELL_ALL_DELAY = 20,
+    SELL_ALL_DELAY = 30,
     FOCUS_RAINBOW_GOLD_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
     EXPAND_PLOT = 3,  -- 0 = No expand, 3 = expand plot 3 times
     BUY_GEAR = { ["Super Watering Can"] = 9999,
@@ -87,16 +87,16 @@ getgenv().GAG2Config = {
     AUTO_MAIL_ITEM_NAME = {
         ["Rainbow"] = "All", 
         ["Gold"] = "All", 
-        ["Black Dragon"] = "All", 
-        ["Golden Dragonfly"] = "All", 
+        ["BlackDragon"] = "All", 
+        ["GoldenDragonfly"] = "All", 
         ["Unicorn"] = "All", 
         ["Raccoon"] = "All", 
-        ["Ice Serpent"] = "All", 
+        ["IceSerpent"] = "All", 
         ["Venus Fly Trap"] = All,
         ["Moon Bloom"] = "All", 
         ["Dragon's Breath"] = "All",
-		["Super Watering Can"] = 1,
-        ["Super Sprinkler"] = 1,
+		["Super Watering Can"] = "All",
+        ["Super Sprinkler"] = "All",
 },  -- ["Item Name"] = Amount
     COLLECT_MAIL = true,
 
