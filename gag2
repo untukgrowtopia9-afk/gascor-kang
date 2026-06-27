@@ -12,8 +12,6 @@ getgenv().GAG2Config = {
     },
 
     PLANT_SEED = {
-        ["Rainbow"] = 50,
-        ["Gold"] = 50,
         ["Carrot"] = 10, 
         ["Strawberry"] = 10,
         ["Blueberry"] = 10,
@@ -82,6 +80,8 @@ getgenv().GAG2Config = {
     -- Auto Mail
     AUTO_MAIL_USERNAME = {"xaluvia2"},  -- "Username" (Randomized)
     AUTO_MAIL_ITEM_NAME = {
+        ["Rainbow"] = "All",
+        ["Gold"] = "All",
         ["Mushroom"] = "All",
         ["BlackDragon"] = "All", 
         ["GoldenDragonfly"] = "All", 
