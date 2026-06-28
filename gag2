@@ -24,18 +24,14 @@ getgenv().GAG2Config = {
         ["Pineapple"] = 10,
         ["Banana"] = 10,
         ["Grape"] = 10,
-        ["Coconut"] = 1000,
-        ["Mango"] = 1000,
+        ["Coconut"] = 500,
+        ["Mango"] = 500,
         ["Dragon Fruit"] = 500,
         ["Acorn"] = 500,
         ["Cherry"] = 500,
-        ["Sunflower"] = 500,
-        ["Venus Fly Trap"] = 500,
+        ["Sunflower"] = 50,
         ["Pomegranate"] = 100,
         ["Poison Apple"] = 500,
-        ["Venom Spitter"] = 500,
-        ["Moon Bloom"] = 500,
-        ["Dragon's Breath"] = 500,
     },
 
     BUY_SEED = {
@@ -85,6 +81,10 @@ getgenv().GAG2Config = {
     -- Auto Mail
     AUTO_MAIL_USERNAME = {"xaluvia2"},  -- "Username" (Randomized)
     AUTO_MAIL_ITEM_NAME = {
+        ["Venus Fly Trap"] = "All",
+        ["Venom Spitter"] = "All",
+        ["Moon Bloom"] = "All",
+        ["Dragon's Breath"] = "All",
         ["Mega"] = "All",
         ["Rainbow"] = "All",
         ["Gold"] = "All",
