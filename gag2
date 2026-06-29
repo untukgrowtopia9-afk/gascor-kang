@@ -1,17 +1,19 @@
 getgenv().GAG2Config = {
-    FPS_CAP = 10,  -- MUST USE 5+ FPS FOR TWEENING
+    FPS_CAP = 7,  -- MUST USE 5+ FPS FOR TWEENING
     AUTO_UPDATE_RESTART = true,
     COLLECT_FRUIT_DELAY = 20,
 
-    BUY_PET = {
+    -- Pet Config
+    MAX_PET_EQUIP = 6,
+    BUY_PET = {  -- ["Pet Name"] = Buy Until Amount
         ["Bunny"] = 6,
     },
-
     EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
         {"Bunny", 6, 1},
     },
 
-    PLANT_SEED = {
+    -- Planting Config
+    PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount
         ["Carrot"] = 10, 
         ["Strawberry"] = 10,
         ["Blueberry"] = 10,
@@ -36,7 +38,8 @@ getgenv().GAG2Config = {
         ["Venom Spitter"] = 500,
     },
 
-    BUY_SEED = {
+    -- Buying Config
+    BUY_SEED = {  -- ["Seed Name"] = Buy Until Amount
         ["Carrot"] = 10, 
         ["Strawberry"] = 10,
         ["Blueberry"] = 10,
@@ -61,32 +64,42 @@ getgenv().GAG2Config = {
         ["Poison Apple"] = 500,
         ["Venom Spitter"] = 500,
         ["Moon Bloom"] = 500,
+        ["Hypno Bloom"] = 500,
         ["Dragon's Breath"] = 500,
     },
-
-    COLLECT_PLANT_IF_MUTATED = {},  -- Only collect fruit when have ANY mutation
-    FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
-
-    SELL_ALL_DAILY_DEAL = true,
-    SELL_ALL_DELAY = 20,
-    FOCUS_RAINBOW_GOLD_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
-    EXPAND_PLOT = 3,  -- 0 = No expand, 3 = expand plot 3 times
+    BUY_AUCTION = {},  -- ["Item Name"] = { Max Sheckle Price, Buy Until Amount }
+    BUY_CRATE = {},  -- ["Crate Name"] = Buy Until Amount
+    BUY_GEAR_MIN_SHECKLE = 1000000, 
     BUY_GEAR = { 
 	["Super Watering Can"] = 9999,
-    ["Legendary Sprinkler"] = 1,
-    ["Super Sprinkler"] = 9999,
-	["Common Watering Can"] = 2,
+    	["Legendary Sprinkler"] = 1,
+    	["Super Sprinkler"] = 9999,
+	["Common Watering Can"] = 1,
 	["Common Sprinkler"] = 1,
     },  
-    BUY_CRATE = {},  -- ["Crate Name"] = Amount
-    USE_SPRINKLER = {	["Common Watering Can"] = 2, ["Common Sprinkler"] = 1, 
-    ["Legendary Sprinkler"] = 1,
-},  -- "Sprinkler Name"
+    
+    -- Sell Config
+    SELL_FRUIT_MULTIPLIER = {}, 
+    SELL_ALL_DAILY_DEAL = 1000000,  -- Min "daily sell all" value
+    SELL_ALL_DELAY = 20,  -- Seconds  
+
+    -- Consumable Config
+    USE_SPRINKLER = {
+	["Common Sprinkler"] = 1,
+    	["Legendary Sprinkler"] = 1,},  -- "Sprinkler Name" (1 active sprinkler at a time)
+    USE_WATERING_CAN = {["Common Watering Can"] = 1,},  -- "Watering Can Name" 
+    USE_WATERING_CAN_DELAY = 60,  -- Seconds
+
+    -- Misc Config
+    COLLECT_PLANT_IF_MUTATED = {},  -- Only collect fruit when have ANY mutation
+    FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
+    FOCUS_COLLECT_DROPPED_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
+    MAX_PET_EQUIP = 6,
+    EXPAND_PLOT = 3,  -- 0 = No expand, 3 = expand plot 3 times
 
     -- Auto Mail
-    AUTO_MAIL_USERNAME = {"xaluvia2"},  -- "Username" (Randomized)
-    AUTO_MAIL_ITEM_NAME = {
-        ["Venus Fly Trap"] = "All",
+    AUTO_MAIL = ["xaluvia2"] = {
+	["Venus Fly Trap"] = "All",
         ["Venom Spitter"] = "All",
         ["Moon Bloom"] = "All",
         ["Dragon's Breath"] = "All",
@@ -98,17 +111,19 @@ getgenv().GAG2Config = {
         ["Unicorn"] = "All", 
         ["Raccoon"] = "All", 
         ["IceSerpent"] = "All", 
-		["Super Watering Can"] = "All",
+	["Super Watering Can"] = "All",
         ["Super Sprinkler"] = "All",
-},  -- ["Item Name"] = Amount
+},  -- ["Username"] = { ["Item Name"] = Amount }
+    AUTO_MAIL_DELAY = 120,  -- Seconds
     COLLECT_MAIL = true,
 
+    -- Discord
     WEBHOOK_PET_NAME = {},
     WEBHOOK_PET_RARITY = { "Mythic", "Super", "Secret" },
-    WEBHOOK_URL = "https://discord.com/api/webhooks/1157111330210328586/u2w9cHwgoCSuVS2tNUQUN9lEEw4y7_pnqSrh6CdDo7wMKvi6zoCVkm_o_hmdegfgA-bw",
-    DISCORD_ID = "1514281114527596555",
-    WEBHOOK_NOTE = "gg",
+    WEBHOOK_URL = "",
+    DISCORD_ID = "",
+    WEBHOOK_NOTE = "",  -- Private Webhook
     SHOW_PUBLIC_DISCORD_ID = false,
-    SHOW_WEBHOOK_USERNAME = true,
-    SHOW_WEBHOOK_JOBID = true,
+    SHOW_WEBHOOK_USERNAME = false,  -- Private Webhook
+    SHOW_WEBHOOK_JOBID = false,  -- Private Webhook
 }
