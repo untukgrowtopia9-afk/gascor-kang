@@ -32,6 +32,7 @@ getgenv().GAG2Config = {
         ["Sunflower"] = 50,
         ["Pomegranate"] = 100,
         ["Poison Apple"] = 500,
+        ["Venom Spitter"] = 500,
     },
 
     BUY_SEED = {
@@ -69,13 +70,16 @@ getgenv().GAG2Config = {
     SELL_ALL_DELAY = 20,
     FOCUS_RAINBOW_GOLD_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
     EXPAND_PLOT = 3,  -- 0 = No expand, 3 = expand plot 3 times
-    BUY_GEAR = { ["Super Watering Can"] = 9999,
-        ["Super Sprinkler"] = 9999,
+    BUY_GEAR = { 
+	["Super Watering Can"] = 9999,
+    ["Legendary Sprinkler"] = 1,
+    ["Super Sprinkler"] = 9999,
 	["Common Watering Can"] = 2,
 	["Common Sprinkler"] = 1,
     },  
     BUY_CRATE = {},  -- ["Crate Name"] = Amount
-    USE_SPRINKLER = {	["Common Watering Can"] = 2, ["Common Sprinkler"] = 1,
+    USE_SPRINKLER = {	["Common Watering Can"] = 2, ["Common Sprinkler"] = 1, 
+    ["Legendary Sprinkler"] = 1,
 },  -- "Sprinkler Name"
 
     -- Auto Mail
