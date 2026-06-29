@@ -98,7 +98,7 @@ getgenv().GAG2Config = {
     EXPAND_PLOT = 3,  -- 0 = No expand, 3 = expand plot 3 times
 
     -- Auto Mail
-    AUTO_MAIL = ["xaluvia2"] = {
+    AUTO_MAIL = {["xaluvia2"] = {
 	["Venus Fly Trap"] = "All",
         ["Venom Spitter"] = "All",
         ["Moon Bloom"] = "All",
