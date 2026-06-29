@@ -88,7 +88,7 @@ getgenv().GAG2Config = {
 	["Common Sprinkler"] = 1,
     	["Legendary Sprinkler"] = 1,},  -- "Sprinkler Name" (1 active sprinkler at a time)
     USE_WATERING_CAN = {["Common Watering Can"] = 1,},  -- "Watering Can Name" 
-    USE_WATERING_CAN_DELAY = 60,  -- Seconds
+    USE_WATERING_CAN_DELAY = 300,  -- Seconds
 
     -- Misc Config
     COLLECT_PLANT_IF_MUTATED = {},  -- Only collect fruit when have ANY mutation
