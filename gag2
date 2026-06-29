@@ -113,7 +113,7 @@ getgenv().GAG2Config = {
         ["IceSerpent"] = "All", 
 	["Super Watering Can"] = "All",
         ["Super Sprinkler"] = "All",
-},  -- ["Username"] = { ["Item Name"] = Amount }
+}},
     AUTO_MAIL_DELAY = 120,  -- Seconds
     COLLECT_MAIL = true,
 
