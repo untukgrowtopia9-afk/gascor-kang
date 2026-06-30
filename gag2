@@ -37,9 +37,6 @@ getgenv().GAG2Config = {
         ["Pomegranate"] = 100,
         ["Poison Apple"] = 500,
         ["Venom Spitter"] = 500,
-        ["Moon Bloom"] = 500,
-        ["Hypno Bloom"] = 500,
-        ["Dragon's Breath"] = 500,
     },
 
     -- Buying Config
