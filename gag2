@@ -14,6 +14,7 @@ getgenv().GAG2Config = {
 
     -- Planting Config
     PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount
+        ["Gold"] = 100, 
         ["Carrot"] = 10, 
         ["Strawberry"] = 10,
         ["Blueberry"] = 10,
