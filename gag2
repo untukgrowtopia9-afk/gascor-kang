@@ -6,29 +6,30 @@ getgenv().GAG2Config = {
     -- Pet Config
     MAX_PET_EQUIP = 6,
     BUY_PET = {  -- ["Pet Name"] = Buy Until Amount
-        ["Deer"] = 6,
+        ["Bunny"] = 6,
     },
     EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
-        {"Deer", 6, 1},
+        {"Bunny", 6, 1},
     },
 
     -- Planting Config
     PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount
-        ["Carrot"] = 5, 
-        ["Strawberry"] = 5,
-        ["Blueberry"] = 5,
-        ["Tulip"] = 5,
-        ["Tomato"] = 5,
-        ["Apple"] = 5,
+        ["Gold"] = 200, 
+        ["Carrot"] = 20, 
+        ["Strawberry"] = 20,
+        ["Blueberry"] = 20,
+        ["Tulip"] = 20,
+        ["Tomato"] = 20,
+        ["Apple"] = 20,
         ["Bamboo"] = 100,
-        ["Corn"] = 5,
-        ["Cactus"] = 5,
-        ["Pineapple"] = 5,
-        ["Mushroom"] = 150,
+        ["Corn"] = 20,
+        ["Cactus"] = 20,
+        ["Pineapple"] = 20,
+        ["Mushroom"] = 25,
         ["Banana"] = 50,
         ["Grape"] = 50,
-        ["Coconut"] = 50,
-        ["Mango"] = 50,
+        ["Coconut"] = 75,
+        ["Mango"] = 75,
         ["Dragon Fruit"] = 100,
         ["Acorn"] = 100,
         ["Cherry"] = 100,
@@ -40,27 +41,27 @@ getgenv().GAG2Config = {
 
     -- Buying Config
     BUY_SEED = {  -- ["Seed Name"] = Buy Until Amount
-        ["Carrot"] = 1, 
-        ["Strawberry"] = 1,
-        ["Blueberry"] = 1,
-        ["Tulip"] = 1,
-        ["Tomato"] = 1,
-        ["Apple"] = 1,
-        ["Bamboo"] = 10,
-        ["Corn"] = 1,
-        ["Cactus"] = 1,
-        ["Pineapple"] = 1,
-        ["Mushroom"] = 10,
+        ["Carrot"] = 0, 
+        ["Strawberry"] = 0,
+        ["Blueberry"] = 0,
+        ["Tulip"] = 0,
+        ["Tomato"] = 0,
+        ["Apple"] = 0,
+        ["Bamboo"] = 0,
+        ["Corn"] = 0,
+        ["Cactus"] = 0,
+        ["Pineapple"] = 0,
+        ["Mushroom"] = 0,
         ["Banana"] = 1,
         ["Grape"] = 1,
-        ["Coconut"] = 5,
-        ["Mango"] = 5,
-        ["Dragon Fruit"] = 5,
-        ["Acorn"] = 5,
-        ["Cherry"] = 5,
-        ["Sunflower"] = 5,
-        ["Venus Fly Trap"] = 5,
-        ["Pomegranate"] = 500,
+        ["Coconut"] = 100,
+        ["Mango"] = 100,
+        ["Dragon Fruit"] = 500,
+        ["Acorn"] = 500,
+        ["Cherry"] = 500,
+        ["Sunflower"] = 500,
+        ["Venus Fly Trap"] = 500,
+        ["Pomegranate"] = 100,
         ["Poison Apple"] = 500,
         ["Venom Spitter"] = 500,
         ["Moon Bloom"] = 500,
@@ -88,7 +89,7 @@ getgenv().GAG2Config = {
 	["Common Sprinkler"] = 1,
     	["Legendary Sprinkler"] = 1,},  -- "Sprinkler Name" (1 active sprinkler at a time)
     USE_WATERING_CAN = {["Common Watering Can"] = 1,},  -- "Watering Can Name" 
-    USE_WATERING_CAN_DELAY = 300,  -- Seconds
+    USE_WATERING_CAN_DELAY = 60,  -- Seconds
 
     -- Misc Config
     COLLECT_PLANT_IF_MUTATED = {},  -- Only collect fruit when have ANY mutation
@@ -98,7 +99,7 @@ getgenv().GAG2Config = {
     EXPAND_PLOT = 3,  -- 0 = No expand, 3 = expand plot 3 times
 
     -- Auto Mail
-    AUTO_MAIL = {["xaluvia2"] = {
+    AUTO_MAIL = { ["xaluvia2"] = {
 	["Venus Fly Trap"] = "All",
         ["Venom Spitter"] = "All",
         ["Moon Bloom"] = "All",
@@ -112,8 +113,7 @@ getgenv().GAG2Config = {
         ["Raccoon"] = "All", 
         ["IceSerpent"] = "All", 
 	["Super Watering Can"] = "All",
-        ["Super Sprinkler"] = "All",
-}},
+        ["Super Sprinkler"] = "All",}},  -- ["Username"] = { ["Item Name"] = Amount }
     AUTO_MAIL_DELAY = 120,  -- Seconds
     COLLECT_MAIL = true,
 
