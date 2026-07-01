@@ -1,4 +1,5 @@
 setfpscap(5)
+script_key = "MVwmhKFRazBCgQpmjZzfnJkcGDZlXdRb";
 getgenv().UserConfig = {
     ["FPS Cap"] = 5,
     ["Auto Buy Seed"] = true,
@@ -92,16 +93,15 @@ getgenv().UserConfig = {
             ["Raccoon"] = 1,] = {Normal = 2, Big = 1, Huge = 1, Rainbow = 1, To = "nhodoitenMAIL"},
         },
         ["Seed"] = {
-            ["Rainbow"] = 2, To = "Xaluvia2",
-            ["Gold"] = 2, To = "Xaluvia2",
-            ["Mega"] = 2, To = "Xaluvia2",
-            -- ["Mushroom"] = {Amount = 10, To = "nhodoitenMAIL"},
-            ["Dragon's Breath"] = 1, To = "Xaluvia2",
-		["Hypno Bloom"] = 1, To = "Xaluvia2",
+            ["Rainbow"] = {Amount = 2, To = "Xaluvia2"},
+            ["Gold"] = {Amount = 2, To = "Xaluvia2"},
+            ["Mega"] = {Amount = 2, To = "Xaluvia2"},
+            ["Dragon's Breath"] = {Amount = 2, To = "Xaluvia2"},
+		["Hypno Bloom"] = {Amount = 2, To = "Xaluvia2"},
         },
         ["Gear"] = {
-            ["Super Sprinkler"] = 2, To = "Xaluvia2",
-	["Super Watering Can"] = 2, To = "Xaluvia2",
+            ["Super Sprinkler"] = {Amount = 2, To = "Xaluvia2"},
+	["Super Watering Can"] = {Amount = 2, To = "Xaluvia2"},
         },
     },
     ["Claim Mail"] = true,
@@ -109,3 +109,4 @@ getgenv().UserConfig = {
     ["Limit Auto Plant"] = 400,
     ["Blacklist Seed"] = {"Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom"}
 }
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/66adeacbfb46c0ea4883aefee367292a.lua"))()
