@@ -1,12 +1,15 @@
 getgenv().UserConfig = {
     ["FPS Cap"] = 5,
+    ["Auto Double Or Nothing"] = true, -- muốn chơi tài xỉu thì đổi thành true
+    ["Double Or Nothing Target Wins"] = 1,
+    ["Auto Add Friends"] = false, -- dễ bị captcha và faceid lưu ý trước khi dùng
     ["Auto Buy Seed"] = true,
     ["Auto Plant Seed"] = true,
     ["Limit Plant Seed"] = {
-        ["Carrot"] = 1, 
+        ["Carrot"] = 1,
     },
     ["Limit Buy Seed"] = {
-        ["Carrot"] = 100, 
+        ["Carrot"] = 50, 
         ["Strawberry"] = 5,
         ["Blueberry"] = 5,
         ["Tulip"] = 5,
@@ -15,30 +18,30 @@ getgenv().UserConfig = {
         ["Bamboo"] = 300,
         ["Corn"] = 5,
         ["Cactus"] = 5,
-        ["Pineapple"] = 5,
-        ["Mushroom"] = 300,
-        ["Green Bean"] = 5,
+        ["Pineapple"] = 5, 
+        ["Mushroom"] = 300, 
         ["Banana"] = 2,
         ["Grape"] = 2,
         ["Coconut"] = 2,
-        ["Mango"] = 2,
+        ["Mango"] = 2, 
         ["Dragon Fruit"] = 2,
         ["Acorn"] = 2,
         ["Cherry"] = 2,
         ["Sunflower"] = 2,
-        ["Venus Fly Trap"] = 2,
-        ["Pomegranate"] = 2,
-        ["Poison Apple"] = 2,
+        ["Venus Fly Trap"] = 2, 
+        ["Pomegranate"] = 2, 
+        ["Poison Apple"] = 2, 
         ["Venom Spitter"] = 10,
+        ["Briar Rose"] = 10,
+        ["Romanesco"] = 10,
         ["Moon Bloom"] = 100,
-    ["Hypno Bloom"] = 100,
+        ["Hypno Bloom"] = 100,
         ["Dragon's Breath"] = 100,
     },
-    ["Blacklist Shovel"] = {"Mega", "Gold", "Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap"},
+    ["Blacklist Shovel"] = {"Mega", "Gold", "Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap", "Briar Rose", "Romanesco","Carrot"},
     ["Shovel Plant Once"] = {},
     ["Favorite"] = {
-        -- ["Horned Melon"] = {"Rainbow", "Gold"},
-    },
+    }, 
     ["Harvest Mutation Only"] = {
     },
     ["Buy Pets"] = {
@@ -51,10 +54,9 @@ getgenv().UserConfig = {
         ["Bee"] = {Huge = 99, Rainbow = 99},
         ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
         ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
-
-    }
+    },
     ["Equip Pets"] = {
-        {"Bunny", 5, 1},
+        {"Bunny", 6, 1},
     },
     ["Expand Plot"] = true,
     ["Plot Expansions"] = 3,
@@ -62,17 +64,17 @@ getgenv().UserConfig = {
     ["Auto Collect Seed Packs"] = true,
     ["Gears"] = {
         ["Buy Gear"] = {
-             ["Common Watering Can"] = 1,
-             ["Rare Sprinkler"] = 1,
-             ["Super Sprinkler"] = 100,
-             ["Super Watering Can"] = 100,
+            "Common Watering Can",
+            "Common Sprinkler",
+            "Super Sprinkler",
+            "Super Watering Can",
         },
         ["Gears To Use"] = {
-             ["Common Watering Can"] = 1,
-             ["Rare Sprinkler"] = 1,
+            "Common Watering Can",
+            "Common Sprinkler",
         },
     },
-        -- WH Pet
+    -- WH Pet
     ["Webhook Pet URL"] = "",
     ["Webhook Pet Name"] = {"Golden Dragonfly","Unicorn","Raccoon"},
     ["Webhook Pet Rarity"] = {"Super", "Secret"},
@@ -99,7 +101,7 @@ getgenv().UserConfig = {
             ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Xaluvia2"},
         },
         ["Seed"] = {
-            ["Carrot"] = {Amount = 2, To = "Xaluvia2"},
+            ["Carrot"] = {Amount = 4, To = "Xaluvia2"},
             ["Rainbow"] = {Amount = 2, To = "Xaluvia2"},
             ["Gold"] = {Amount = 2, To = "Xaluvia2"},
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
