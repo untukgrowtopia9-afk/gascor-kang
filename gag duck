@@ -41,7 +41,7 @@ getgenv().UserConfig = {
     ["Harvest Mutation Only"] = {
     },
     ["Buy Pets"] = {
-        ["Frog"] = {Huge = 99, Rainbow = 99}, -- mua 99 Huge, 99 Rainbow (khÃ´ng mua pet Normal, Big)
+        ["Frog"] = {Huge = 99, Rainbow = 99},
         ["Bunny"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
         ["Turtle"] = {Huge = 99, Rainbow = 99},
         ["Owl"] = {Huge = 99, Rainbow = 99},
@@ -86,12 +86,18 @@ getgenv().UserConfig = {
     ["Mail To Username"] = {"Xaluvia2"},
     ["Items To Mail"] = {
         ["Pet"] = {
-            ["Golden Dragonfly"] = 2,
-            ["Unicorn"] = 2,
-            ["Raccoon"] = 1, = {Normal = 2, Big = 1, Huge = 1, Rainbow = 1, To = "Xaluvia2"},
+        ["Frog"] = {Huge = 99, Rainbow = 99, To = "Xaluvia2"},
+        ["Bunny"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "Xaluvia2"},
+        ["Turtle"] = {Huge = 99, Rainbow = 99, To = "Xaluvia2"},
+        ["Owl"] = {Huge = 99, Rainbow = 99, To = "Xaluvia2"},
+        ["Deer"] = {Huge = 99, Rainbow = 99, To = "Xaluvia2"},
+        ["Robin"] = {Huge = 99, Rainbow = 99, To = "Xaluvia2"},
+        ["Bee"] = {Huge = 99, Rainbow = 99, To = "Xaluvia2"},
+        ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "Xaluvia2"},
+        ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "Xaluvia2"},
+            ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Xaluvia2"},
         },
         ["Seed"] = {
-            ["Carrot"] = {Amount = 5, To = "Xaluvia2"},
             ["Rainbow"] = {Amount = 2, To = "Xaluvia2"},
             ["Gold"] = {Amount = 2, To = "Xaluvia2"},
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
@@ -106,5 +112,5 @@ getgenv().UserConfig = {
     ["Claim Mail"] = true,
     ["Auto Plant"] = true,
     ["Limit Auto Plant"] = 800,
-    ["Blacklist Seed"] = {"Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Carrot"}
+    ["Blacklist Seed"] = {"Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", }
 }
