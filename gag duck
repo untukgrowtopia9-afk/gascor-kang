@@ -99,7 +99,7 @@ getgenv().UserConfig = {
             ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Xaluvia2"},
         },
         ["Seed"] = {
-            ["Carrot"] = {Amount = 40, To = "Xaluvia2"},
+            ["Carrot"] = {Amount = 2, To = "Xaluvia2"},
             ["Rainbow"] = {Amount = 2, To = "Xaluvia2"},
             ["Gold"] = {Amount = 2, To = "Xaluvia2"},
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
