@@ -3,10 +3,10 @@ getgenv().UserConfig = {
     ["Auto Buy Seed"] = true,
     ["Auto Plant Seed"] = true,
     ["Limit Plant Seed"] = {
-        ["Carrot"] = 50, 
+        ["Carrot"] = 5, 
     },
     ["Limit Buy Seed"] = {
-        ["Carrot"] = 5, 
+        ["Carrot"] = 10, 
         ["Strawberry"] = 5,
         ["Blueberry"] = 5,
         ["Tulip"] = 5,
@@ -92,6 +92,7 @@ getgenv().UserConfig = {
             ["Raccoon"] = 1, = {Normal = 2, Big = 1, Huge = 1, Rainbow = 1, To = "Xaluvia2"},
         },
         ["Seed"] = {
+            ["Carrot"] = {Amount = 10, To = "Xaluvia2"},
             ["Rainbow"] = {Amount = 2, To = "Xaluvia2"},
             ["Gold"] = {Amount = 2, To = "Xaluvia2"},
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
