@@ -98,6 +98,7 @@ getgenv().UserConfig = {
             ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Xaluvia2"},
         },
         ["Seed"] = {
+            ["Carrot"] = {Amount = 40, To = "Xaluvia2"},
             ["Rainbow"] = {Amount = 2, To = "Xaluvia2"},
             ["Gold"] = {Amount = 2, To = "Xaluvia2"},
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
@@ -112,5 +113,5 @@ getgenv().UserConfig = {
     ["Claim Mail"] = true,
     ["Auto Plant"] = true,
     ["Limit Auto Plant"] = 800,
-    ["Blacklist Seed"] = {"Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", }
+    ["Blacklist Seed"] = {"Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Carrot"}
 }
