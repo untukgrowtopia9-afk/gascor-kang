@@ -90,7 +90,7 @@ getgenv().UserConfig = {
     ["Items To Mail"] = {
         ["Pet"] = {
         ["Frog"] = {Huge = 99, Rainbow = 99, To = "Xaluvia2"},
-        ["Bunny"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "Xaluvia2"},
+        ["Bunny"] = {Huge = 99, Rainbow = 99, To = "Xaluvia2"},
         ["Turtle"] = {Huge = 99, Rainbow = 99, To = "Xaluvia2"},
         ["Owl"] = {Huge = 99, Rainbow = 99, To = "Xaluvia2"},
         ["Deer"] = {Huge = 99, Rainbow = 99, To = "Xaluvia2"},
