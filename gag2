@@ -1,5 +1,5 @@
 getgenv().GAG2Config = {
-    FPS_CAP = 7,  -- MUST USE 5+ FPS FOR TWEENING
+    FPS_CAP = 5,  -- MUST USE 5+ FPS FOR TWEENING
     AUTO_UPDATE_RESTART = true,
     COLLECT_FRUIT_DELAY = 20,
 
@@ -15,7 +15,6 @@ getgenv().GAG2Config = {
     -- Planting Config
     PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount
         ["Gold"] = 100, 
-        ["Carrot"] = 10, 
         ["Strawberry"] = 10,
         ["Blueberry"] = 10,
         ["Tulip"] = 10,
@@ -42,7 +41,7 @@ getgenv().GAG2Config = {
 
     -- Buying Config
     BUY_SEED = {  -- ["Seed Name"] = Buy Until Amount
-        ["Carrot"] = 1, 
+        ["Carrot"] = 10, 
         ["Strawberry"] = 1,
         ["Blueberry"] = 1,
         ["Tulip"] = 1,
@@ -101,6 +100,7 @@ getgenv().GAG2Config = {
 
     -- Auto Mail
     AUTO_MAIL = { ["xaluvia2"] = {
+	["Carrot"] = "40",
 	["Venus Fly Trap"] = "All",
         ["Venom Spitter"] = "All",
         ["Moon Bloom"] = "All",
