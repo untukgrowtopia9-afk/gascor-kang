@@ -101,12 +101,12 @@ getgenv().UserConfig = {
             ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Xaluvia2"},
         },
         ["Seed"] = {
-            ["Carrot"] = {Amount = 30, To = "Xaluvia2"},
+            ["Carrot"] = {Amount = 50, To = "Xaluvia2"},
             ["Rainbow"] = {Amount = 2, To = "Xaluvia2"},
-            ["Gold"] = {Amount = 2, To = "Xaluvia2"},
+            ["Gold"] = {Amount = 5, To = "Xaluvia2"},
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
-            ["Dragon's Breath"] = {Amount = 2, To = "Xaluvia2"},
-        ["Hypno Bloom"] = {Amount = 2, To = "Xaluvia2"},
+            ["Dragon's Breath"] = {Amount = 1, To = "Xaluvia2"},
+        ["Hypno Bloom"] = {Amount = 1, To = "Xaluvia2"},
         },
         ["Gear"] = {
             ["Super Sprinkler"] = {Amount = 2, To = "Xaluvia2"},
