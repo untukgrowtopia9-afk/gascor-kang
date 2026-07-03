@@ -15,11 +15,11 @@ getgenv().UserConfig = {
         ["Tulip"] = 5,
         ["Tomato"] = 5,
         ["Apple"] = 5,
-        ["Bamboo"] = 300,
+        ["Bamboo"] = 100,
         ["Corn"] = 5,
         ["Cactus"] = 5,
         ["Pineapple"] = 5, 
-        ["Mushroom"] = 300, 
+        ["Mushroom"] = 100, 
         ["Banana"] = 2,
         ["Grape"] = 2,
         ["Coconut"] = 2,
@@ -115,6 +115,6 @@ getgenv().UserConfig = {
     },
     ["Claim Mail"] = true,
     ["Auto Plant"] = true,
-    ["Limit Auto Plant"] = 600,
+    ["Limit Auto Plant"] = 500,
     ["Blacklist Seed"] = {"Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Carrot"}
 }
