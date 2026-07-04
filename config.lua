@@ -11,13 +11,15 @@ _G.FishItConfig = _G.FishItConfig or {
             -- {Variant = "Leviathan Rage"}, -- Variant Only
             -- {Tier = "Secret", Variant = "Leviathan Rage"},  -- Tier + Variant
         },
-
+        ["Trade Timeout"] = 90,
         ["Auto Accept Trade"] = true,
         ["Auto Friend Request"] = false,
+	
+	["Auto Egg Exchange"] = false,
     },
     ["Auto Trade"] = {
         ["Enabled"] = true,
-        ["Whitelist Username"] = {"xevoraq4","rohmad007","xindalox7","xaluvia2","xotyrex9","xenvora1"},
+        ["Whitelist Username"] = {"xindalox7"},
         ["Category Fish"] = {
             "Secret",
             -- {Tier = "Mythic", Variant = "Stone"}, -- Tier + Variant
@@ -37,13 +39,13 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["Selling"] = {
         ["Auto Sell"] = true,
-        ["Auto Sell Threshold"] = "Mythic",
-        ["Auto Sell Every"] = 50,
+        ["Auto Sell Threshold"] = "Legendary",
+        ["Auto Sell Every"] = 100,
     },
     ["Doing Quest"] = {
         ["Auto Ghostfinn Rod"] = true,
         ["Auto Element Rod"] = false,
-        ["Auto Element Rod 2"] = false,
+        ["Auto Element Rod 2"] = true,
         ["Auto Diamond Rod"] = false,
         ["Unlock Ancient Ruin"] = false,
         ["Allowed Sacrifice"] = {
@@ -63,21 +65,19 @@ _G.FishItConfig = _G.FishItConfig or {
             "Gladiator Shark",
             "Mosasaur Shark",
         },
-        ["FARM_LOC_SECRET_SACRIFICE"] = "Tropical Grove",
+        ["FARM_LOC_SECRET_SACRIFICE"] = "Ocean",
 
         ["Minimum Rod"] = "Astral Rod",
     },
     ["WebHook"] = {
-        ["Link Webhook"] = "https://discord.com/api/webhooks/1157111326410276934/Nurt7kSW_tYfnz7-ups403JeHQX3u-32qvD-Sw_HNcdqh14lSfZsgbsrunIySbnpJFKm",
-        ["Auto Sending"] = true,
-        ["Category"] = {"Secret"},
-        ["Fish Name"] = {
-            "Sacred Guardian Squid",
+        ["Auto Sending"] = false,
+        ["Category"] = {
+            "Secret",
             {Name = "Ruby", Variant = "Gemstone"},
-            -- {Variant = "Leviathan Rage"}, -- Variant Only
         },
-
-        ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1157111326410276934/Nurt7kSW_tYfnz7-ups403JeHQX3u-32qvD-Sw_HNcdqh14lSfZsgbsrunIySbnpJFKm",
+        ["Item Name"] = {},
+        ["Link Webhook"] = "",
+        ["Link Webhook Quest Complete"] = "",
     },
     ["Weather"] = {
         ["Auto Buying"] = true,
@@ -94,26 +94,33 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Use"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Buy List"] = {
-            ["Mutation Totem"] = 5555,
-            "Luck Totem",
+            ["Luck Totem"] = 5,
+            "Mutation Totem",
         },
     },
     ["Event"] = {
         ["Start Farm"] = false,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Event List"] = {
-            "Megalodon Hunt",
+            ["Mutant Runic Koi"] = true,
+            ["Ancient Lochness Monster"] = true,
             "Ghost Shark Hunt",
             "Shark Hunt",
-            -- ["Ancient Lochness Monster"] = false,
+            "Megalodon Hunt",
         },
     },
     ["Enchant"] = {
         ["Auto Enchant"] = true,
         ["Roll Enchant"] = true,
-        ["Evolved Roll Enchant"] = false,
+        ["Evolved Roll Enchant"] = true,
+        ["Farm Until Enchant"] = true,
         ["Enchant List"] = {
-            "Cursed I",
+            "SECRET Hunter",
+            "Shark Hunter",
+            "Mutation Hunter III",
+            "Leprechaun II",
+            "Mutation Hunter II",
+            "Prismatic I",
         },
         ["Second Enchant"] = true,
         ["Allowed Sacrifice"] = {
@@ -131,27 +138,14 @@ _G.FishItConfig = _G.FishItConfig or {
             "King Jelly",
             "Depthseeker Ray",
             "Gladiator Shark",
-            "Mosasaur Shark"
+            "Mosasaur Shark",
         },
         ["Second Enchant List"] = {
             "Reeler I",
-            "Perfection",
-            "Stargazer I",
-            "Glistening I",
-            "Stormhunter I",
             "Prismatic I",
-            "XPerienced I",
-            "Mutation Hunter I",
-            "Cursed I",
-            "Big Hunter I",
-            "Reeler I",
-            "Gold Digger I",
-            "Leprechaun I",
-            "Empowered I",
             "Mutation Hunter II",
-            "Leprechaun II",
         },
-        ["Minimum Rod"] = "Ghostfinn Rod",
+        ["Minimum Rod"] = "Element Rod",
     },
     ["Bait List"] = {
         ["Auto Buying"] = true,
@@ -168,7 +162,6 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Rod List"] = {
         ["Auto Buying"] = true,
         ["Buy List"] = {
-            "Luck Rod",
             "Grass Rod",
             "Midnight Rod",
             "Astral Rod",
