@@ -66,6 +66,7 @@ getgenv().UserConfig = {
         ["Buy Gear"] = {
             "Common Watering Can",
             "Common Sprinkler",
+            "Legendary Sprinkler",
             "Super Sprinkler",
             "Super Watering Can",
         },
@@ -109,7 +110,8 @@ getgenv().UserConfig = {
         ["Hypno Bloom"] = {Amount = 1, To = "Xaluvia2"},
         },
         ["Gear"] = {
-            ["Super Sprinkler"] = {Amount = 2, To = "Xaluvia2"},
+    ["Legendary Sprinkler"] = {Amount = 2, To = "Xaluvia2"},
+    ["Super Sprinkler"] = {Amount = 2, To = "Xaluvia2"},
     ["Super Watering Can"] = {Amount = 2, To = "Xaluvia2"},
         },
     },
