@@ -2,39 +2,32 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
         ["Auto Perfect"] = false,
         ["Random Result"] = false,
-
         ["Auto Favorite"] = true,
         ["Auto Unfavorite"] = false,
         ["Fish Name"] = {
-            "Sacred Guardian Squid",
             {Name = "Ruby", Variant = "Gemstone"},
-            -- {Variant = "Leviathan Rage"}, -- Variant Only
-            -- {Tier = "Secret", Variant = "Leviathan Rage"},  -- Tier + Variant
         },
         ["Trade Timeout"] = 90,
         ["Auto Accept Trade"] = true,
         ["Auto Friend Request"] = false,
-	
-	["Auto Egg Exchange"] = false,
+        ["Auto Egg Exchange"] = false,
     },
     ["Auto Trade"] = {
         ["Enabled"] = true,
         ["Whitelist Username"] = {"xindalox7"},
         ["Category Fish"] = {
             "Secret",
-            -- {Tier = "Mythic", Variant = "Stone"}, -- Tier + Variant
         },
         ["Fish Name"] = {
             "Sacred Guardian Squid",
             {Name = "Ruby", Variant = "Gemstone"},
-            -- {Variant = "Leviathan Rage"}, -- Variant Only
         },
         ["Item Name"] = {
-            "Evolved Enchant Stone",
+            "Evolved Enchant Stone", "Runic Enchant Stone",
         },
     },
     ["Farm Coin Only"] = {
-        ["Enabled"] = false, -- Farm coins only [ cant buy rod, bait, enchant, weather ]
+        ["Enabled"] = false,
         ["Target"] = 190000,
     },
     ["Selling"] = {
@@ -49,24 +42,12 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Diamond Rod"] = false,
         ["Unlock Ancient Ruin"] = false,
         ["Allowed Sacrifice"] = {
-            "Ghost Shark",
-            "Cryoshade Glider",
-            "Panther Eel",
-            "Queen Crab",
-            "King Crab",
-            "Giant Squid",
-            "Blob Shark",
-            "Ghost Shark",
-            "Elshark Gran Maja",
-            "Great Whale",
-            "Robot Kraken",
-            "King Jelly",
-            "Depthseeker Ray",
-            "Gladiator Shark",
-            "Mosasaur Shark",
+            "Ghost Shark", "Cryoshade Glider", "Panther Eel", "Queen Crab",
+            "King Crab", "Giant Squid", "Blob Shark", "Elshark Gran Maja",
+            "Great Whale", "Robot Kraken", "King Jelly", "Depthseeker Ray",
+            "Gladiator Shark", "Mosasaur Shark",
         },
         ["FARM_LOC_SECRET_SACRIFICE"] = "Ocean",
-
         ["Minimum Rod"] = "Astral Rod",
     },
     ["WebHook"] = {
@@ -82,9 +63,7 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Weather"] = {
         ["Auto Buying"] = true,
         ["Minimum Rod"] = "Astral Rod",
-        ["Weather List"] = {
-            "Wind",
-        },
+        ["Weather List"] = {"Wind"},
     },
     ["Potions"] = {
         ["Auto Use"] = true,
@@ -115,73 +94,47 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Evolved Roll Enchant"] = true,
         ["Farm Until Enchant"] = true,
         ["Enchant List"] = {
-            "SECRET Hunter",
-            "Shark Hunter",
-            "Mutation Hunter III",
-            "Leprechaun II",
-            "Mutation Hunter II",
-            "Prismatic I",
+            "SECRET Hunter", "Shark Hunter", "Mutation Hunter III",
+            "Leprechaun II", "Mutation Hunter II", "Prismatic I",
         },
         ["Second Enchant"] = true,
         ["Allowed Sacrifice"] = {
-            "Ghost Shark",
-            "Cryoshade Glider",
-            "Panther Eel",
-            "Queen Crab",
-            "King Crab",
-            "Giant Squid",
-            "Blob Shark",
-            "Ghost Shark",
-            "Elshark Gran Maja",
-            "Great Whale",
-            "Robot Kraken",
-            "King Jelly",
-            "Depthseeker Ray",
-            "Gladiator Shark",
-            "Mosasaur Shark",
+            "Ghost Shark", "Cryoshade Glider", "Panther Eel", "Queen Crab",
+            "King Crab", "Giant Squid", "Blob Shark", "Elshark Gran Maja",
+            "Great Whale", "Robot Kraken", "King Jelly", "Depthseeker Ray",
+            "Gladiator Shark", "Mosasaur Shark",
         },
         ["Second Enchant List"] = {
-            "Reeler I",
-            "Prismatic I",
-            "Mutation Hunter II",
+            "Reeler I", "Prismatic I", "Mutation Hunter II",
         },
         ["Minimum Rod"] = "Element Rod",
     },
     ["Bait List"] = {
         ["Auto Buying"] = true,
         ["Buy List"] = {
-            "Topwater Bait",
-            "Midnight Bait",
-            "Chroma Bait",
-            "Corrupt Bait",
-            "Aether Bait",
-            "Singularity Bait",
+            "Topwater Bait", "Midnight Bait", "Chroma Bait",
+            "Corrupt Bait", "Aether Bait", "Singularity Bait",
         },
         ["Endgame"] = "Singularity Bait",
     },
     ["Rod List"] = {
         ["Auto Buying"] = true,
         ["Buy List"] = {
-            "Grass Rod",
-            "Midnight Rod",
-            "Astral Rod",
-            "Ares Rod",
-            "Angler Rod",
+            "Grass Rod", "Midnight Rod", "Astral Rod",
+            "Ares Rod", "Angler Rod",
         },
         ["Location Rods"] = {
             ["Fisherman Island"] = {"Starter Rod"},
-            ["Kohana Volcano"] = {"Grass Rod", "Midnight Rod"},
-            ["Tropical Grove"] = {"Astral Rod"},
-            ["Treasure Room"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
+            ["Kohana Volcano"]    = {"Grass Rod", "Midnight Rod"},
+            ["Tropical Grove"]    = {"Astral Rod"},
+            ["Underwater City"]     = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
         },
         ["Endgame"] = "Element Rod",
     },
-
     ["ExtremeFpsBoost"] = false,
     ["UltimatePerformance"] = true,
     ["Disable3DRender"] = true,
     ["AutoRemovePlayer"] = true,
-
     ["AutoReconnect"] = false,
     ["HideGUI"] = false,
     ["EXIT_MAP_IF_DISCONNECT"] = false,
