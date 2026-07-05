@@ -37,10 +37,10 @@ getgenv().UserConfig = {
         ["Hypno Bloom"] = 0,
         ["Dragon's Breath"] = 100,
     },
-    ["Blacklist Shovel"] = {"Mega", "Gold", "Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap", "Briar Rose", "Romanesco",},
+    ["Blacklist Shovel"] = {"Mega", "Gold", "Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap"},
     ["Shovel Plant Once"] = {},
     ["Favorite"] = {
-    }, 
+    },
     ["Harvest Mutation Only"] = {
     },
     ["Buy Pets"] = {
@@ -53,7 +53,7 @@ getgenv().UserConfig = {
         ["Bee"] = {Huge = 99, Rainbow = 99},
         ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
         ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
-    },
+    }
     ["Equip Pets"] = {
         {"Bunny", 6, 1},
     },
@@ -73,8 +73,7 @@ getgenv().UserConfig = {
             "Common Watering Can",
             "Common Sprinkler",
         },
-    },
-    -- WH Pet
+    },        -- WH Pet
     ["Webhook Pet URL"] = "",
     ["Webhook Pet Name"] = {"Golden Dragonfly","Unicorn","Raccoon"},
     ["Webhook Pet Rarity"] = {"Super", "Secret"},
@@ -116,9 +115,9 @@ getgenv().UserConfig = {
     ["Super Sprinkler"] = {Amount = 2, To = "Xaluvia2"},
     ["Super Watering Can"] = {Amount = 2, To = "Xaluvia2"},
         },
-    },
-    ["Claim Mail"] = true,
+    },    
+	["Claim Mail"] = true,
     ["Auto Plant"] = true,
     ["Limit Auto Plant"] = 500,
-    ["Blacklist Seed"] = {"Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Carrot",}
+    ["Blacklist Seed"] = {"Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Carrot"}
 }
