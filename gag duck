@@ -34,8 +34,8 @@ getgenv().UserConfig = {
         ["Venom Spitter"] = 0,
         ["Briar Rose"] = 0,
         ["Romanesco"] = 0,
-        ["Moon Bloom"] = 100,
-        ["Hypno Bloom"] = 100,
+        ["Moon Bloom"] = 0,
+        ["Hypno Bloom"] = 0,
         ["Dragon's Breath"] = 100,
     },
     ["Blacklist Shovel"] = {"Mega", "Gold", "Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap", "Briar Rose", "Romanesco","Carrot"},
@@ -107,6 +107,7 @@ getgenv().UserConfig = {
             ["Gold"] = {Amount = 5, To = "Xaluvia2"},
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
             ["Dragon's Breath"] = {Amount = 1, To = "Xaluvia2"},
+            [Moon Bloom"] = {Amount = 1, To = "Xaluvia2"},
         ["Hypno Bloom"] = {Amount = 1, To = "Xaluvia2"},
         },
         ["Gear"] = {
