@@ -18,7 +18,7 @@ getgenv().UserConfig = {
         ["Bamboo"] = 300,
         ["Corn"] = 5,
         ["Cactus"] = 5,
-        ["Pineapple"] = 50, 
+        ["Pineapple"] = 5, 
         ["Mushroom"] = 100, 
         ["Fire Fern"] = 5, 
         ["Rocket Pop"] = 100, 
@@ -26,7 +26,7 @@ getgenv().UserConfig = {
         ["Banana"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Grape"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Coconut"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Mango"] = 25, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Mango"] = 5, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Dragon Fruit"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Acorn"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Cherry"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
@@ -113,8 +113,6 @@ getgenv().UserConfig = {
         },
         ["Seed"] = {
             ["Carrot"] = {Amount = 50, To = "xindalox7"},
-            ["Mango"] = {Amount = 20, To = "Xaluvia2"},
-            ["Pineapple"] = {Amount = 20, To = "Xaluvia2"},
             ["Rainbow"] = {Amount = 2, To = "Xaluvia2"},
             ["Gold"] = {Amount = 5, To = "Xaluvia2"},
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
@@ -130,6 +128,6 @@ getgenv().UserConfig = {
     },
     ["Claim Mail"] = true,
     ["Auto Plant"] = true,
-    ["Limit Auto Plant"] = 500,
+    ["Limit Auto Plant"] = 450,
     ["Blacklist Seed"] = {"Rainbow"}
 }
