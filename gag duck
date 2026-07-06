@@ -1,3 +1,4 @@
+script_key = "Dien_Key_Cua_Ban_Vao_Day"; 
 getgenv().UserConfig = {
     ["FPS Cap"] = 5,
     ["Auto Double Or Nothing"] = true, -- muốn chơi tài xỉu thì đổi thành true
@@ -5,7 +6,8 @@ getgenv().UserConfig = {
     ["Auto Add Friends"] = false, -- dễ bị captcha và faceid lưu ý trước khi dùng
     ["Auto Buy Seed"] = true,
     ["Auto Plant Seed"] = true,
-    ["Limit Plant Seed"] = {
+    ["Limit Plant Seed"] = { -- không cần dùng tới
+        ["Tulip"] = 1,
     },
     ["Limit Buy Seed"] = {
         ["Carrot"] = 50, 
@@ -14,33 +16,37 @@ getgenv().UserConfig = {
         ["Tulip"] = 5,
         ["Tomato"] = 5,
         ["Apple"] = 5,
-        ["Bamboo"] = 100,
+        ["Bamboo"] = 300,
         ["Corn"] = 5,
         ["Cactus"] = 5,
-        ["Pineapple"] = 25, 
+        ["Pineapple"] = 50, 
         ["Mushroom"] = 100, 
-        ["Banana"] = 2,
-        ["Grape"] = 2,
-        ["Coconut"] = 2,
-        ["Mango"] = 25, 
-        ["Dragon Fruit"] = 2,
-        ["Acorn"] = 2,
-        ["Cherry"] = 2,
-        ["Sunflower"] = 2,
-        ["Venus Fly Trap"] = 0,
-        ["Pomegranate"] = 0, 
-        ["Poison Apple"] = 0, 
-        ["Venom Spitter"] = 0,
-        ["Briar Rose"] = 0,
-        ["Romanesco"] = 0,
-        ["Moon Bloom"] = 0,
-        ["Hypno Bloom"] = 0,
+        ["Fire Fern"] = 5, 
+        ["Rocket Pop"] = 100, 
+        ["Green Bean"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Banana"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Grape"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Coconut"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Mango"] = 25, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Dragon Fruit"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Acorn"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Cherry"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Sunflower"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Venus Fly Trap"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Pomegranate"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Poison Apple"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Venom Spitter"] = 10, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Briar Rose"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Romanesco"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Moon Bloom"] = 100,
+        ["Hypno Bloom"] = 100,
         ["Dragon's Breath"] = 100,
     },
-    ["Blacklist Shovel"] = {"Mega", "Gold", "Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap"},
+    ["Blacklist Shovel"] = {"Mega", "Gold", "Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap", "Briar Rose", "Romanesco"},
     ["Shovel Plant Once"] = {},
     ["Favorite"] = {
-    },
+        -- ["Horned Melon"] = {"Rainbow", "Gold"},
+    }, 
     ["Harvest Mutation Only"] = {
     },
     ["Buy Pets"] = {
@@ -53,7 +59,9 @@ getgenv().UserConfig = {
         ["Bee"] = {Huge = 99, Rainbow = 99},
         ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
         ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
-    }
+        ["Bald Eagle"] = 999,
+        ["Butterfly"] = 999,
+    },
     ["Equip Pets"] = {
         {"Bunny", 6, 1},
     },
@@ -73,18 +81,23 @@ getgenv().UserConfig = {
             "Common Watering Can",
             "Common Sprinkler",
         },
-    },        -- WH Pet
-    ["Webhook Pet URL"] = "",
-    ["Webhook Pet Name"] = {"Golden Dragonfly","Unicorn","Raccoon"},
-    ["Webhook Pet Rarity"] = {"Super", "Secret"},
-     -- WH Seed
-    ["Webhook Seed URL"] = "",
-    ["Webhook Seed Name"] = {"Rainbow", "Gold", "Mega", "Dragon's Breath", "Hypno Bloom", "Moon Bloom",},
-        -- WH Gear
-    ["Webhook Gear URL"] = "",
-    ["Webhook Gear Name"] = {"Super Sprinkler", "Super Watering Can"},
-    ["Webhook Note"] = "GG",
-    ["Discord ID"] = "2298505389115965452",
+    },
+    
+    -- CẤU HÌNH WEBHOOK (Thay link Discord của bạn vào phần xxxx)
+    ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1516873518304722954/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    ["Webhook Pet Name"] = {"Golden Dragonfly","Unicorn","Raccoon","Monkey","Bee","Ice Serpent","Robin","Deer"},
+    ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
+    
+    ["Webhook Seed URL"] = "https://discord.com/api/webhooks/1521791543919378442/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    ["Webhook Seed Name"] = {"Rainbow", "Gold", "Mega", "Dragon's Breath", "Hypno Bloom", "Moon Bloom", "Briar Rose", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap"},
+    
+    ["Webhook Gear URL"] = "https://discord.com/api/webhooks/1521791670570582068/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    ["Webhook Gear Name"] = {"Super Sprinkler", "Super Watering Can", "Legendary Sprinkler"},
+
+    ["Webhook Note"] = "Dien_Ten_Cua_Ban",
+    ["Discord ID"] = "Dien_ID_Discord_Cua_Ban",
+    
+    -- CẤU HÌNH GỬI MAIL (Điền chính xác Username của acc nhận đồ)
     ["Mail To Username"] = {"Xaluvia2"},
     ["Items To Mail"] = {
         ["Pet"] = {
@@ -97,7 +110,7 @@ getgenv().UserConfig = {
         ["Bee"] = {Huge = 99, Rainbow = 99, To = "Xaluvia2"},
         ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "Xaluvia2"},
         ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99, To = "Xaluvia2"},
-            ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Xaluvia2"},
+        ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Xaluvia2"},
         },
         ["Seed"] = {
             ["Carrot"] = {Amount = 50, To = "xindalox7"},
@@ -108,16 +121,16 @@ getgenv().UserConfig = {
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
             ["Dragon's Breath"] = {Amount = 1, To = "Xaluvia2"},
             [Moon Bloom"] = {Amount = 1, To = "Xaluvia2"},
-        ["Hypno Bloom"] = {Amount = 1, To = "Xaluvia2"},
+		["Hypno Bloom"] = {Amount = 1, To = "Xaluvia2"},
         },
         ["Gear"] = {
-    ["Legendary Sprinkler"] = {Amount = 2, To = "Xaluvia2"},
-    ["Super Sprinkler"] = {Amount = 2, To = "Xaluvia2"},
-    ["Super Watering Can"] = {Amount = 2, To = "Xaluvia2"},
+    		["Legendary Sprinkler"] = {Amount = 2, To = "Xaluvia2"},
+    		["Super Sprinkler"] = {Amount = 2, To = "Xaluvia2"},
+    		["Super Watering Can"] = {Amount = 2, To = "Xaluvia2"},
         },
-    },    
-	["Claim Mail"] = true,
+    },
+    ["Claim Mail"] = true,
     ["Auto Plant"] = true,
-    ["Limit Auto Plant"] = 500,
-    ["Blacklist Seed"] = {"Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Carrot"}
+    ["Limit Auto Plant"] = 600,
+    ["Blacklist Seed"] = {"Rainbow"}
 }
