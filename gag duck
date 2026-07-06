@@ -114,8 +114,6 @@ getgenv().UserConfig = {
         },
         ["Seed"] = {
             ["Carrot"] = {Amount = 50, To = "xindalox7"},
-            ["Pineapple"] = {Amount = 25, To = "xindalox7"},
-            ["Mango"] = {Amount = 25, To = "xindalox7"},
             ["Rainbow"] = {Amount = 2, To = "Xaluvia2"},
             ["Gold"] = {Amount = 5, To = "Xaluvia2"},
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
