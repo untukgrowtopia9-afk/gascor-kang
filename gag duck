@@ -1,4 +1,3 @@
-script_key = "Dien_Key_Cua_Ban_Vao_Day"; 
 getgenv().UserConfig = {
     ["FPS Cap"] = 5,
     ["Auto Double Or Nothing"] = true, -- muốn chơi tài xỉu thì đổi thành true
