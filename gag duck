@@ -9,7 +9,7 @@ getgenv().UserConfig = {
         ["Tulip"] = 1,
     },
     ["Limit Buy Seed"] = {
-        ["Carrot"] = 50, 
+        ["Carrot"] = 5, 
         ["Strawberry"] = 5,
         ["Blueberry"] = 5,
         ["Tulip"] = 5,
@@ -111,7 +111,6 @@ getgenv().UserConfig = {
         ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Xaluvia2"},
         },
         ["Seed"] = {
-            ["Carrot"] = {Amount = 50, To = "xindalox7"},
             ["Rainbow"] = {Amount = 2, To = "Xaluvia2"},
             ["Gold"] = {Amount = 5, To = "Xaluvia2"},
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
