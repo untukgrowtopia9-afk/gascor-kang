@@ -45,9 +45,9 @@ _G.FishItConfig = _G.FishItConfig or {
             "Ghost Shark", "Cryoshade Glider", "Panther Eel", "Queen Crab",
             "King Crab", "Giant Squid", "Blob Shark", "Elshark Gran Maja",
             "Great Whale", "Robot Kraken", "King Jelly", "Depthseeker Ray",
-            "Gladiator Shark", "Mosasaur Shark",
+            "Gladiator Shark", "Mosasaur Shark", "Deepsea Monster Axolotl"
         },
-        ["FARM_LOC_SECRET_SACRIFICE"] = "Ocean",
+        ["FARM_LOC_SECRET_SACRIFICE"] = "Underwater City",
         ["Minimum Rod"] = "Astral Rod",
     },
     ["WebHook"] = {
@@ -94,15 +94,15 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Evolved Roll Enchant"] = true,
         ["Farm Until Enchant"] = true,
         ["Enchant List"] = {
-            "SECRET Hunter", "Shark Hunter", "Mutation Hunter III",
-            "Leprechaun II", "Mutation Hunter II", "Prismatic I",
+            "SECRET Hunter",
+            "Leprechaun II",
         },
         ["Second Enchant"] = true,
         ["Allowed Sacrifice"] = {
             "Ghost Shark", "Cryoshade Glider", "Panther Eel", "Queen Crab",
             "King Crab", "Giant Squid", "Blob Shark", "Elshark Gran Maja",
             "Great Whale", "Robot Kraken", "King Jelly", "Depthseeker Ray",
-            "Gladiator Shark", "Mosasaur Shark",
+            "Gladiator Shark", "Mosasaur Shark", "Deepsea Monster Axolotl"
         },
         ["Second Enchant List"] = {
             "Reeler I", "Prismatic I", "Mutation Hunter II",
