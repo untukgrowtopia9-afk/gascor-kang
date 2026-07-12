@@ -104,7 +104,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Gladiator Shark", "Mosasaur Shark", "Deepsea Monster Axolotl"
         },
         ["Second Enchant List"] = {
-            "Leprechaun II","
+            "Leprechaun II",
         },
         ["Minimum Rod"] = "Element Rod",
     },
@@ -131,8 +131,8 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Endgame"] = "Element Rod",
     },
     ["ExtremeFpsBoost"] = false,
-    ["UltimatePerformance"] = false,
-    ["Disable3DRender"] = false,
+    ["UltimatePerformance"] = true,
+    ["Disable3DRender"] = true,
     ["AutoRemovePlayer"] = true,
     ["AutoReconnect"] = false,
     ["HideGUI"] = false,
