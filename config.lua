@@ -94,7 +94,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Evolved Roll Enchant"] = true,
         ["Farm Until Enchant"] = true,
         ["Enchant List"] = {
-            "SECRET Hunter",
+            "SECRET Hunter", "Leprechaun II"
         },
         ["Second Enchant"] = true,
         ["Allowed Sacrifice"] = {
@@ -104,7 +104,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Gladiator Shark", "Mosasaur Shark", "Deepsea Monster Axolotl"
         },
         ["Second Enchant List"] = {
-            "Leprechaun II",
+            "Leprechaun II", "Empowered I"
         },
         ["Minimum Rod"] = "Element Rod",
     },
