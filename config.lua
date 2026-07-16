@@ -47,7 +47,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Great Whale", "Robot Kraken", "King Jelly", "Depthseeker Ray",
             "Gladiator Shark", "Mosasaur Shark", "Deepsea Monster Axolotl"
         },
-        ["FARM_LOC_SECRET_SACRIFICE"] = "Underwater City",
+        ["FARM_LOC_SECRET_SACRIFICE"] = "Ancient Ruin",
         ["Minimum Rod"] = "Astral Rod",
     },
     ["WebHook"] = {
@@ -126,7 +126,7 @@ _G.FishItConfig = _G.FishItConfig or {
             ["Fisherman Island"] = {"Starter Rod"},
             ["Kohana Volcano"]    = {"Grass Rod", "Midnight Rod"},
             ["Tropical Grove"]    = {"Astral Rod"},
-            ["Underwater City"]     = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
+            ["Ancient Ruin"]     = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
         },
         ["Endgame"] = "Element Rod",
     },
