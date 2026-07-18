@@ -83,9 +83,9 @@ getgenv().UserConfig = {
     },
     
     -- CẤU HÌNH WEBHOOK (Thay link Discord của bạn vào phần xxxx)
-    ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1516873518304722954/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    ["Webhook Pet Name"] = {"Golden Dragonfly","Unicorn","Raccoon","Monkey","Bee","Ice Serpent","Robin","Deer"},
-    ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
+    ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1173760132140761128/zHvJBRN9WO5uH5HYTITBHEe2Fwxe2ZwA_8CuHyLS8PPG2Za_LPJuOB05RMVj09ruWGAa",
+    ["Webhook Pet Name"] = {"Raccoon","Ice Serpent"},
+    ["Webhook Pet Rarity"] = {"Super", "Secret"},
     
     ["Webhook Seed URL"] = "https://discord.com/api/webhooks/1521791543919378442/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     ["Webhook Seed Name"] = {"Rainbow", "Gold", "Mega", "Dragon's Breath", "Hypno Bloom", "Moon Bloom", "Briar Rose", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap"},
@@ -94,7 +94,7 @@ getgenv().UserConfig = {
     ["Webhook Gear Name"] = {"Super Sprinkler", "Super Watering Can", "Legendary Sprinkler"},
 
     ["Webhook Note"] = "Dien_Ten_Cua_Ban",
-    ["Discord ID"] = "Dien_ID_Discord_Cua_Ban",
+    ["Discord ID"] = "1519280031334011001",
     
     -- CẤU HÌNH GỬI MAIL (Điền chính xác Username của acc nhận đồ)
     ["Mail To Username"] = {"Xaluvia2"},
