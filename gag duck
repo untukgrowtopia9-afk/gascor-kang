@@ -120,7 +120,7 @@ getgenv().UserConfig = {
 		["Mango"] = {Amount = 25, To = "Xaluvia2"},
 		["Corn"] = {Amount = 25, To = "Xaluvia2"},
 		["Acorn"] = {Amount = 5, To = "Xaluvia2"},
-		["Rainbow"] = {Amount = 1, To = "Xaluvia2"},
+		["Rainbow"] = {Amount = 5, To = "Xaluvia2"},
         },
         ["Gear"] = {
     		["Legendary Sprinkler"] = {Amount = 2, To = "Xaluvia2"},
