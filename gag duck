@@ -28,7 +28,7 @@ getgenv().UserConfig = {
         ["Coconut"] = 200, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Mango"] = 5, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Dragon Fruit"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Acorn"] = 20, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Acorn"] = 30, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Cherry"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Sunflower"] = 200, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Venus Fly Trap"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
@@ -116,10 +116,10 @@ getgenv().UserConfig = {
             ["Dragon's Breath"] = {Amount = 1, To = "Xaluvia2"},
             ["Moon Bloom"] = {Amount = 1, To = "Xaluvia2"},
 		["Hypno Bloom"] = {Amount = 1, To = "Xaluvia2"},
-		["Bamboo"] = {Amount = 25, To = "Xaluvia2"},
+		["Bamboo"] = {Amount = 60, To = "Xaluvia2"},
 		["Mango"] = {Amount = 25, To = "Xaluvia2"},
 		["Corn"] = {Amount = 25, To = "Xaluvia2"},
-		["Acorn"] = {Amount = 5, To = "Xaluvia2"},
+		["Acorn"] = {Amount = 25, To = "Xaluvia2"},
 		["Rainbow"] = {Amount = 5, To = "Xaluvia2"},
         },
         ["Gear"] = {
