@@ -14,23 +14,23 @@ getgenv().UserConfig = {
         ["Blueberry"] = 5,
         ["Tulip"] = 5,
         ["Tomato"] = 5,
-        ["Apple"] = 200,
+        ["Apple"] = 20,
         ["Bamboo"] = 300,
         ["Corn"] = 500,
         ["Cactus"] = 5,
-        ["Pineapple"] = 200, 
+        ["Pineapple"] = 2, 
         ["Mushroom"] = 100, 
         ["Fire Fern"] = 5, 
         ["Rocket Pop"] = 100, 
         ["Green Bean"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Banana"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Grape"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Coconut"] = 200, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Coconut"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Mango"] = 5, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Dragon Fruit"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Acorn"] = 30, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Acorn"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Cherry"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Sunflower"] = 200, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
+        ["Sunflower"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Venus Fly Trap"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Pomegranate"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
         ["Poison Apple"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
@@ -114,9 +114,6 @@ getgenv().UserConfig = {
         ["Seed"] = {
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
 		["Bamboo"] = {Amount = 60, To = "Xaluvia2"},
-		["Mango"] = {Amount = 25, To = "Xaluvia2"},
-		["Corn"] = {Amount = 25, To = "Xaluvia2"},
-		["Acorn"] = {Amount = 25, To = "Xaluvia2"},
 		["Rainbow"] = {Amount = 5, To = "Xaluvia2"},
         },
         ["Gear"] = {
