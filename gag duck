@@ -113,9 +113,6 @@ getgenv().UserConfig = {
         },
         ["Seed"] = {
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
-            ["Dragon's Breath"] = {Amount = 1, To = "Xaluvia2"},
-            ["Moon Bloom"] = {Amount = 1, To = "Xaluvia2"},
-		["Hypno Bloom"] = {Amount = 1, To = "Xaluvia2"},
 		["Bamboo"] = {Amount = 60, To = "Xaluvia2"},
 		["Mango"] = {Amount = 25, To = "Xaluvia2"},
 		["Corn"] = {Amount = 25, To = "Xaluvia2"},
