@@ -1,54 +1,75 @@
+script_key = "Enter_Your_Key_Here"; 
 getgenv().UserConfig = {
-    ["FPS Cap"] = 5,
-    ["Auto Double Or Nothing"] = true, -- muốn chơi tài xỉu thì đổi thành true
-    ["Double Or Nothing Target Wins"] = 1,
-    ["Auto Add Friends"] = false, -- dễ bị captcha và faceid lưu ý trước khi dùng
-    ["Auto Buy Seed"] = true,
-    ["Auto Plant Seed"] = true,
-    ["Limit Plant Seed"] = { -- không cần dùng tới
-        ["Tulip"] = 1,
+    -- [ CẤU HÌNH HIỆU NĂNG ]
+    ["FPS Cap"] = 5, -- Giới hạn khung hình để giảm tải CPU/GPU (rất tốt khi treo nhiều tài khoản)
+    
+    -- [ CẤU HÌNH MINI-GAME ]
+    ["Auto Double Or Nothing"] = false, -- Đổi thành true nếu muốn tự động chơi tài xỉu
+    ["Double Or Nothing Target Wins"] = 1, -- Mục tiêu thắng liên tiếp trước khi dừng để nhận thưởng
+    
+    -- [ CẤU HÌNH BẠN BÈ ]
+    ["Auto Add Friends"] = false, -- Lưu ý: dễ dính captcha và face verification, cẩn thận khi dùng
+    
+    -- [ CẤU HÌNH TRỒNG TRỌT ]
+    ["Auto Buy Seed"] = true, -- Tự động mua hạt giống từ cửa hàng
+    ["Auto Plant Seed"] = true, -- Tự động trồng hạt giống vào ô đất
+    
+    ["Limit Plant Seed"] = { -- Số lượng hạt giống tối đa trồng cùng lúc (hiếm khi dùng)
+        ["Strawberry"] = 10,
+        ["Blueberry"] = 10,
+        ["Tomato"] = 10,
     },
-    ["Limit Buy Seed"] = {
-        ["Carrot"] = 5, 
-        ["Strawberry"] = 5,
-        ["Blueberry"] = 5,
-        ["Tulip"] = 5,
-        ["Tomato"] = 5,
-        ["Apple"] = 20,
-        ["Bamboo"] = 300,
-        ["Corn"] = 500,
-        ["Cactus"] = 5,
-        ["Pineapple"] = 2, 
-        ["Mushroom"] = 100, 
-        ["Fire Fern"] = 5, 
-        ["Rocket Pop"] = 100, 
-        ["Green Bean"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Banana"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Grape"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Coconut"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Mango"] = 5, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Dragon Fruit"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Acorn"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Cherry"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Sunflower"] = 2, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Venus Fly Trap"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Pomegranate"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Poison Apple"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Venom Spitter"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Briar Rose"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Romanesco"] = 0, -- cảm thấy mất tiền thì xoá mấy dòng này vì mua seed tốn tiền lắm
-        ["Moon Bloom"] = 0,
-        ["Hypno Bloom"] = 0,
+    
+    ["Limit Buy Seed"] = { -- Số lượng hạt giống tối đa mua và giữ trong kho đồ
+        ["Carrot"] = 0, 
+        ["Strawberry"] = 0,
+        ["Blueberry"] = 0,
+        ["Tulip"] = 0,
+        ["Tomato"] = 0,
+        ["Apple"] = 0,
+        ["Bamboo"] = 0,
+        ["Corn"] = 0,
+        ["Cactus"] = 0,
+        ["Pineapple"] = 0, 
+        ["Mushroom"] = 0, 
+        ["Fire Fern"] = 0, 
+        ["Rocket Pop"] = 0, 
+        ["Green Bean"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Banana"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Grape"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Coconut"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Mango"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Dragon Fruit"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Acorn"] = 25, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Cherry"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Sunflower"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Venus Fly Trap"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Pomegranate"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Poison Apple"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Venom Spitter"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Briar Rose"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Romanesco"] = 0, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Moon Bloom"] = 100,
+        ["Hypno Bloom"] = 100,
         ["Dragon's Breath"] = 100,
+        ["Sun Bloom"] = 100,
+        ["Star Fruit"] = 100,
+        ["Eclipse Bloom"] = 100,
     },
-    ["Blacklist Shovel"] = {"Mega", "Gold", "Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap", "Briar Rose", "Romanesco", "Cherry"},
-    ["Shovel Plant Once"] = {},
-    ["Favorite"] = {
+    
+    -- [ DANH SÁCH ĐEN CUỐC & ĐỘT BIẾN ]
+    ["Blacklist Shovel"] = {"Mega", "Gold", "Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap", "Briar Rose", "Romanesco"}, -- Hạt giống trong này sẽ KHÔNG BAO GIỜ bị cuốc đào mất
+    ["Shovel Plant Once"] = {}, -- Hạt giống trong này sẽ bị đào ngay sau khi trồng (thường dùng để farm XP nhanh)
+    
+    ["Favorite"] = { -- Ưu tiên giữ lại để lấy đột biến cho các loại này
         -- ["Horned Melon"] = {"Rainbow", "Gold"},
     }, 
+    
     ["Harvest Mutation Only"] = {
     },
-    ["Buy Pets"] = {
+    
+    -- [ CẤU HÌNH THÚ NUÔI ]
+    ["Buy Pets"] = { -- Số lượng mục tiêu để tự động mua và ấp thú nuôi
         ["Frog"] = {Huge = 99, Rainbow = 99},
         ["Bunny"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
         ["Turtle"] = {Huge = 99, Rainbow = 99},
@@ -58,31 +79,36 @@ getgenv().UserConfig = {
         ["Bee"] = {Huge = 99, Rainbow = 99},
         ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
         ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
-        ["Bald Eagle"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
+        ["Bald Eagle"] = {Big = 99, Huge = 99, Rainbow = 99},
         ["Butterfly"] = {Big = 99, Huge = 99, Rainbow = 99},
         ["Firefly"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
     },
-    ["Equip Pets"] = {
+    
+    ["Equip Pets"] = { -- Thú nuôi bạn muốn hệ thống tự động mặc
         {"Firefly", 6, 1},
     },
-    ["Expand Plot"] = true,
-    ["Plot Expansions"] = 3,
-    ["Unlock Pet Slots"] = 6,
-    ["Auto Collect Seed Packs"] = true,
+    
+    -- [ CẤU HÌNH ĐẤT ĐAI & NÂNG CẤP ]
+    ["Expand Plot"] = true, -- Tự động mua mở rộng ô đất
+    ["Plot Expansions"] = 3, -- Số lần mở rộng đất mục tiêu cần mua
+    ["Unlock Pet Slots"] = 6, -- Số ô chứa pet mục tiêu muốn mở khóa
+    ["Auto Collect Seed Packs"] = true, -- Tự động nhặt các túi hạt giống rơi trên mặt đất
+    
+    -- [ CẤU HÌNH TRANG BỊ ]
     ["Gears"] = {
         ["Buy Gear"] = {
-            "Common Watering Can",
-            "Common Sprinkler",
-            "Super Sprinkler",
-            "Super Watering Can",
+            ["Super Sprinkler"] = 100,
+            ["Super Watering Can"] = 100,
         },
-        ["Gears To Use"] = {
+        ["Gears To Use"] = { -- Tự động kích hoạt và dùng trang bị cho các ô đất
             "Common Watering Can",
             "Common Sprinkler",
+            "Uncommon Sprinkler",
+            "Rare Sprinkler",
         },
     },
     
-    -- CẤU HÌNH WEBHOOK (Thay link Discord của bạn vào phần xxxx)
+    -- [ CẤU HÌNH WEBHOOK DISCORD ] (Thay link của bạn vào phần xxxx để nhận thông báo qua Discord)
     ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1173760132140761128/zHvJBRN9WO5uH5HYTITBHEe2Fwxe2ZwA_8CuHyLS8PPG2Za_LPJuOB05RMVj09ruWGAa",
     ["Webhook Pet Name"] = {"Raccoon","Ice Serpent"},
     ["Webhook Pet Rarity"] = {"Super", "Secret"},
@@ -115,6 +141,7 @@ getgenv().UserConfig = {
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
 		["Bamboo"] = {Amount = 60, To = "Xaluvia2"},
 		["Rainbow"] = {Amount = 5, To = "Xaluvia2"},
+		["Acorn"] = {Amount = 20, To = "Xaluvia2"},
         },
         ["Gear"] = {
     		["Legendary Sprinkler"] = {Amount = 2, To = "Xaluvia2"},
@@ -125,5 +152,5 @@ getgenv().UserConfig = {
     ["Claim Mail"] = true,
     ["Auto Plant"] = true,
     ["Limit Auto Plant"] = 600,
-    ["Blacklist Seed"] = {"Rainbow"}
+    ["Blacklist Seed"] = {"Rainbow", "Gold"}
 }
