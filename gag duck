@@ -1,6 +1,6 @@
 getgenv().UserConfig = {
     -- [ CẤU HÌNH HIỆU NĂNG ]
-    ["FPS Cap"] = 5, -- Giới hạn khung hình để giảm tải CPU/GPU (rất tốt khi treo nhiều tài khoản)
+    ["FPS Cap"] = 8, -- Giới hạn khung hình để giảm tải CPU/GPU (rất tốt khi treo nhiều tài khoản)
     
     -- [ CẤU HÌNH MINI-GAME ]
     ["Auto Double Or Nothing"] = false, -- Đổi thành true nếu muốn tự động chơi tài xỉu
@@ -139,7 +139,6 @@ getgenv().UserConfig = {
         ["Seed"] = {
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
 		["Bamboo"] = {Amount = 60, To = "Xaluvia2"},
-		["Rainbow"] = {Amount = 5, To = "Xaluvia2"},
 		["Acorn"] = {Amount = 20, To = "Xaluvia2"},
         },
         ["Gear"] = {
