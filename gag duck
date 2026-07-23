@@ -40,13 +40,9 @@ getgenv().UserConfig = {
         ["Dragon Fruit"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
         ["Acorn"] = 25, -- delete these lines if you want to save money, buying these seeds is expensive
         ["Cherry"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
-        ["Sunflower"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
-        ["Venus Fly Trap"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
         ["Pomegranate"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
         ["Poison Apple"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
-        ["Venom Spitter"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
-        ["Briar Rose"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
-        ["Romanesco"] = 5, -- delete these lines if you want to save money, buying these seeds is expensive
+        ["Venom Spitter"] = 5,
         ["Moon Bloom"] = 100,
         ["Hypno Bloom"] = 100,
         ["Dragon's Breath"] = 100,
@@ -63,18 +59,21 @@ getgenv().UserConfig = {
         -- ["Horned Melon"] = {"Rainbow", "Gold"},
     }, 
     
-    ["Harvest Mutation Only"] = {
+    ["Harvest Mutation Only"] = { -- Chỉ thu hoạch nếu cây tiến hóa đột biến, còn không thì để nguyên hoặc đào bỏ
+        --"Bamboo",
+        --["Tomato"] = {"Rainbow", "Gold", "Bloodlit", "Electric", "Starstruck", "Frozen", "Aurora"},
+        --"Apple",
     },
     
     -- [ CẤU HÌNH THÚ NUÔI ]
     ["Buy Pets"] = { -- Số lượng mục tiêu để tự động mua và ấp thú nuôi
-        ["Frog"] = {Huge = 99, Rainbow = 99},
+        ["Frog"] = {Big = 99, Huge = 99, Rainbow = 99},
         ["Bunny"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
-        ["Turtle"] = {Huge = 99, Rainbow = 99},
-        ["Owl"] = {Huge = 99, Rainbow = 99},
-        ["Deer"] = {Huge = 99, Rainbow = 99},
-        ["Robin"] = {Huge = 99, Rainbow = 99},
-        ["Bee"] = {Huge = 99, Rainbow = 99},
+        ["Turtle"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Owl"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Deer"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Robin"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Bee"] = {Big = 99, Huge = 99, Rainbow = 99},
         ["Raccoon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
         ["Black Dragon"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
         ["Bald Eagle"] = {Big = 99, Huge = 99, Rainbow = 99},
@@ -94,7 +93,7 @@ getgenv().UserConfig = {
     
     -- [ CẤU HÌNH TRANG BỊ ]
     ["Gears"] = {
-        ["Buy Gear"] = {
+        ["Buy Gear"] = { -- Tự động mua trang bị đến số lượng chỉ định
             ["Super Sprinkler"] = 100,
             ["Super Watering Can"] = 100,
         },
@@ -103,6 +102,9 @@ getgenv().UserConfig = {
             "Common Sprinkler",
             "Uncommon Sprinkler",
             "Rare Sprinkler",
+            -- "Legendary Sprinkler",
+            -- "Super Sprinkler",
+            -- "Super Watering Can",
         },
     },
     
@@ -120,8 +122,8 @@ getgenv().UserConfig = {
     ["Webhook Note"] = "Dien_Ten_Cua_Ban",
     ["Discord ID"] = "1519280031334011001",
     
-    -- CẤU HÌNH GỬI MAIL (Điền chính xác Username của acc nhận đồ)
-    ["Mail To Username"] = {"Xaluvia2"},
+    -- [ CẤU HÌNH GỬI MAIL ] (Tự động gửi vật phẩm thu hoạch được sang tài khoản chính/acc kho)
+    ["Mail To Username"] = {"Numedump"}, -- Tài khoản nhận mặc định nếu các mục dưới không chỉ định tên riêng
     ["Items To Mail"] = {
         ["Pet"] = {
         ["Frog"] = {Huge = 99, Rainbow = 99, To = "Xaluvia2"},
@@ -146,8 +148,10 @@ getgenv().UserConfig = {
     		["Super Watering Can"] = {Amount = 2, To = "Xaluvia2"},
         },
     },
-    ["Claim Mail"] = true,
-    ["Auto Plant"] = true,
-    ["Limit Auto Plant"] = 600,
-    ["Blacklist Seed"] = {"Rainbow", "Gold"}
+    ["Claim Mail"] = true, -- Tự động nhận thư/quà từ mail gửi đến
+    
+    -- [ GIỚI HẠN TỰ ĐỘNG TRỒNG CỦA BOT ]
+    ["Auto Plant"] = true, -- Bật tính năng tự động trồng cây
+    ["Limit Auto Plant"] = 600, -- Bot sẽ ngừng trồng cây sau khi số lượng ô đạt giới hạn này
+    ["Blacklist Seed"] = {"Rainbow", "Gold"} -- Hạt giống nằm trong này sẽ KHÔNG BAO GIỜ bị đem đi trồng
 }
