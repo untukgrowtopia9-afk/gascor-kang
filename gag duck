@@ -26,7 +26,7 @@ getgenv().UserConfig = {
         ["Tulip"] = 5,
         ["Tomato"] = 5,
         ["Apple"] = 5,
-        ["Bamboo"] = 5,
+        ["Bamboo"] = 500,
         ["Corn"] = 5,
         ["Cactus"] = 5,
         ["Pineapple"] = 5, 
@@ -141,6 +141,7 @@ getgenv().UserConfig = {
             ["Mega"] = {Amount = 2, To = "Xaluvia2"},
 		["Bamboo"] = {Amount = 60, To = "Xaluvia2"},
 		["Acorn"] = {Amount = 20, To = "Xaluvia2"},
+		["Bamboo"] = {Amount = 60, To = "Xaluvia2"},
         },
         ["Gear"] = {
     		["Legendary Sprinkler"] = {Amount = 2, To = "Xaluvia2"},
