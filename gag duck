@@ -1,4 +1,3 @@
-script_key = "Enter_Your_Key_Here"; 
 getgenv().UserConfig = {
     -- [ CẤU HÌNH HIỆU NĂNG ]
     ["FPS Cap"] = 5, -- Giới hạn khung hình để giảm tải CPU/GPU (rất tốt khi treo nhiều tài khoản)
