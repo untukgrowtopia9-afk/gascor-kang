@@ -154,5 +154,5 @@ getgenv().UserConfig = {
     -- [ GIỚI HẠN TỰ ĐỘNG TRỒNG CỦA BOT ]
     ["Auto Plant"] = true, -- Bật tính năng tự động trồng cây
     ["Limit Auto Plant"] = 600, -- Bot sẽ ngừng trồng cây sau khi số lượng ô đạt giới hạn này
-    ["Blacklist Seed"] = {"Rainbow", "Gold"} -- Hạt giống nằm trong này sẽ KHÔNG BAO GIỜ bị đem đi trồng
+    ["Blacklist Seed"] = {} -- Hạt giống nằm trong này sẽ KHÔNG BAO GIỜ bị đem đi trồng
 }
